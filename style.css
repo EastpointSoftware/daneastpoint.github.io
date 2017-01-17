@@ -453,6 +453,14 @@ li.dropdown:hover > ul.dropdown-menu {
     box-shadow: 0 4px 10px rgba(0,0,0,.08)!important;
     top: 54px!important;
 }
+.dropdown-menu.columns-2 {
+    min-width: 400px;
+}
+.multi-column-dropdown {
+    list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
 .dropdown-section {
     padding: 15px;
     background-color: #f6f9fc;
