@@ -442,8 +442,11 @@ a.navbar-brand.show-scroll {
     color: rgba(255,255,255,0.6);
 }
 .nav>li>a {
-    padding: 0px;
-    margin-left: 20px!important;
+    padding: 0px!important;
+    margin: 0px 20px;
+}
+.navbar-nav>li>a {
+    padding-bottom: 0px;
 }
 li.dropdown:hover > ul.dropdown-menu {
     display: block;    
