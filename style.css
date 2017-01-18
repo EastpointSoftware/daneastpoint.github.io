@@ -449,6 +449,7 @@ a.navbar-brand.show-scroll {
     margin: 0px 20px;
 }
 .navbar-nav>li>a {
+    padding-top: 10px;
     padding-bottom: 0px;
 }
 li.dropdown:hover > ul.dropdown-menu {
