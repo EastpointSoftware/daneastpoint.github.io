@@ -445,8 +445,8 @@ a.navbar-brand.show-scroll {
     border-bottom: 2px solid #fff;
 }
 .nav>li>a {
-    padding: 0px!important;
-    margin: 0px 20px;
+    padding: 0px 0px 5px 0px!important;
+    margin: 15px 18px;
 }
 li.dropdown:hover > ul.dropdown-menu {
     display: block;    
