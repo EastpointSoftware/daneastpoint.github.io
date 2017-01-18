@@ -442,7 +442,7 @@ a.navbar-brand.show-scroll {
     color: rgba(255,255,255,0.6);
 }
 .nav>li>a.active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .nav>li>a {
     padding: 0px 0px 5px 0px!important;
