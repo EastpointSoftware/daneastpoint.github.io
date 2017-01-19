@@ -862,6 +862,11 @@ li.dropdown:hover > ul.dropdown-menu {
     background-size: cover;
     position: relative;
 }
+@media screen and (max-width: 768px) {
+    .epteamprofile {
+        width: 50%!important;
+    }
+}
 .zoom {
     background-size: 150%!important;
 }
