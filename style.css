@@ -865,6 +865,7 @@ li.dropdown:hover > ul.dropdown-menu {
 @media screen and (max-width: 768px) {
     .epteamprofile {
         width: 50%!important;
+        height: 300px!important;
     }
 }
 .zoom {
