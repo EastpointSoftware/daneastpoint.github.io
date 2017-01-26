@@ -790,13 +790,13 @@ li.dropdown:hover > ul.dropdown-menu {
 }
 /* TEAM CLIENT QUOTES */
 /* PANELS */
-.epservicepanel, .epservicepanel-heading a {
+.epservicepanel, .panelheading-open a {
     text-align: left;
     border-radius: 0px;
     box-shadow: none;
     border: 0px;
 }
-.epservicepanel-heading, .epcontactpanel-heading, .epservicepanel-heading a {
+.epservicepanel-heading, .epcontactpanel-heading, .panelheading-open a {
     color: inherit;
     font-size: 14px;
     font-weight: 600;

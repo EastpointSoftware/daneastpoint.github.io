@@ -253,7 +253,7 @@
                     <!-- ACCORDION -->
                     <div id="accordion" role="tablist" aria-multiselectable="true">
   <div class="card">
-    <div class="epservicepanel-heading card-header" role="tab" id="headingOne" style="
+    <div class="epservicepanel-heading panelheading card-header" role="tab" id="headingOne" style="
     box-shadow: 4px 7px 20px 0px rgba(46,61,73,0.12);
     padding: 10px 10px 9px 10px;
     background: #F6F9FC;
@@ -269,7 +269,7 @@
     padding: 0px;
     margin: 0px;
 ">
-          Collapsible Group Item #1
+          Industry experience
         </a>
       </h5>
     </div>
@@ -528,6 +528,10 @@ $(document).ready(function(){
         /*function(){ $(this).removeClass('logoblur') }*/
         /*function(){ $('#logobutton').removeClass('logobuttonappear') }*/
     )
+});
+$('.panelheading').on('click', function(){
+    $(this).addClass('panelheading-open');
+    /*$('panelheading-open').removeClass('current');*/
 });
 $(document).ready(function(){
     $('#prevservice').hover(
