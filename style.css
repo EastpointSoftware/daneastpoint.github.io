@@ -812,6 +812,7 @@ li.dropdown:hover > ul.dropdown-menu {
     border-radius: 0px;
 }
 .panelheading a, .panelheading a:focus, .panelheading a:hover {
+    font-weight: 600;
     margin: 0px;
     padding: 0px; 
     text-decoration: none;
