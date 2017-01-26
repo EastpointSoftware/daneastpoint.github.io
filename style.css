@@ -848,7 +848,7 @@ li.dropdown:hover > ul.dropdown-menu {
     border: none;
 }
 .list-group-item {
-    background-color: transparent;
+    background-color: transparent!important;
 }
 .eppanel-body p {
     font-size: 14px;
@@ -873,7 +873,7 @@ li.dropdown:hover > ul.dropdown-menu {
     padding-bottom: 2px;
 }
 .list-group {
-    padding-left: 10px;
+    padding-left: 10px!important;
 }
 .epservicepanel>.list-group .list-group-item i {
     color: #CFD7DF;
