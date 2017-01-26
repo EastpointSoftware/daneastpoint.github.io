@@ -525,8 +525,8 @@ $(document).ready(function(){
     )
 });
 $('.panelheading').on('click', function(){
-    $(this).addClass('panelheading-open');
-    return false
+    $(this).addClass('panelheading-open') },
+    function(){ $('.panelheading').removeClass('panelheading-open');}
     /*$('panelheading-open').removeClass('current');*/
 });
 $(document).ready(function(){
