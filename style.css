@@ -827,6 +827,9 @@ li.dropdown:hover > ul.dropdown-menu {
 .epservicepanel-heading, .panelheading a, .panelheading a:focus, .panelheading a:hover, .panelheading-open a:focus, .panelheading-open a:hover  {
     color: #2AB27B;
 }
+.epservicepanel {
+    margin-top: 10px;
+}
 .epcontactpanel-heading {
     color: #4B6BC6;
 }
@@ -843,6 +846,9 @@ li.dropdown:hover > ul.dropdown-menu {
     padding: 6px 0px;
     letter-spacing: 0.03em;
     border: none;
+}
+.list-group-item {
+    background: transparent;
 }
 .eppanel-body p {
     font-size: 14px;
