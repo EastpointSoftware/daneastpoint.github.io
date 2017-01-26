@@ -811,9 +811,10 @@ li.dropdown:hover > ul.dropdown-menu {
     padding: 10px 10px 9px 10px;
     border-radius: 0px;
 }
-.panelheading a {
+.panelheading a, .panelheading a:focus, .panelheading a:hover {
     margin: 0px;
     padding: 0px; 
+    text-decoration: none;
 }
 .panelheading-open {
     box-shadow: 4px 7px 20px 0px rgba(46,61,73,0.12);
@@ -821,7 +822,7 @@ li.dropdown:hover > ul.dropdown-menu {
     background: #F6F9FC;
     border-radius: 0px;
 }
-.epservicepanel-heading {
+.epservicepanel-heading, .panelheading a, .panelheading a:focus, .panelheading a:hover, .panelheading-open a:focus, .panelheading-open a:hover  {
     color: #2AB27B;
 }
 .epcontactpanel-heading {
