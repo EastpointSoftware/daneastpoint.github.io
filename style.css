@@ -810,6 +810,7 @@ li.dropdown:hover > ul.dropdown-menu {
 .panelheading {
     padding: 10px 10px 9px 10px;
     border-radius: 0px;
+    margin-bottom: 0px;
 }
 .panelheading a, .panelheading a:focus, .panelheading a:hover {
     font-weight: 600;
