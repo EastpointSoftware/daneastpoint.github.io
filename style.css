@@ -807,6 +807,12 @@ li.dropdown:hover > ul.dropdown-menu {
     border-bottom: 1px solid #F6F9FC;
     text-transform: uppercase;
 }
+.panelheading-open {
+    box-shadow: 4px 7px 20px 0px rgba(46,61,73,0.12);
+    padding: 10px 10px 9px 10px;
+    background: #F6F9FC;
+    border-radius: 0px;
+}
 .epservicepanel-heading {
     color: #2AB27B;
 }
