@@ -282,6 +282,9 @@ span.smallline {
 }
 /* PADDING + MARGINS ETC */
 /* SECTION BACKGROUND */
+.bluebg {
+    background-color: #4B6BC6;
+}
 .greybg {
     background-color: #f6f9fc;
 }
