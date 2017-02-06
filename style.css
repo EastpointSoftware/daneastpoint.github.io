@@ -977,7 +977,7 @@ i.fa.fa-google-plus {
 }*/
 .footertop {
     height: inherit;
-    background-color: #f6f9fc;
+    background-color: #333;
     padding-top: 80px;
     padding-bottom: 80px;
     /*border-bottom: 2px solid rgba(207,215,223,.25);*/
@@ -1016,7 +1016,7 @@ i.fa.fa-google-plus {
 }
 .footerbtm {
     height: auto;
-    background-color: #f6f9fc;
+    background-color: #222;
     padding: 10px 0px 10px 0px;
 }
 .footerbtm p {
