@@ -9,13 +9,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <title>Eastpoint Software - iOS App Development</title>
     </head>
 <body>
 <!-- NAV START -->
 <nav class="navbar nav" style="margin-bottom: -60px;">
-    <span id="navgrad" class="navbar-gradient"></span>
+    <!--<span id="navgrad" class="navbar-gradient"></span>-->
     <div class="container-fluid container-global paddingleft paddingright" style="padding-left: 0px; padding-right: 0px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -25,56 +26,71 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="navbar-left">
-                <a class="navbar-brand" href="index.html"><img src="eastpoint-brand-white@2x.png" width="130px" /></a>
+                <a class="navbar-brand hide-scroll" href="index.html"><img src="eastpoint-brand-white@2x.png" width="130px" /></a>
+                <a class="navbar-brand show-scroll" href="index.html"><img src="eastpoint-brand@2x.png" width="130px" /></a>
             </div>
         </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
         <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav nav-options service">
-                <li><a href="#">Home</a></li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu epdropdown" style="width: 300px;">
+                    <ul class="dropdown-menu epdropdown multi-column columns-2" style="width: 40vw; left: 0;">
                         <!--<li><a href="#" class="dropdownsimple">Mobile Apps</a></li>-->
-                        <li><a href="android-app-development.html" class="dropdownpop"><i class="fa fa-apple" aria-hidden="true"></i> Mobile Apps<br><p>Optional sub-title offering info about<br>Web Apps.</p></a></li>
-                        <li><a href="android-app-development.html" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> Web Apps<br><p>Optional sub-title offering info about<br>Web Apps.</p></a></li>
-                        <li><a href="ios-app-development.html" class="dropdownpop">Design Sprints<br><p>Optional sub-title offering info about<br>Design Sprints.</p></a></li>
-                        <li><a href="#" class="dropdownpop">User Experience<br><p>Optional sub-title offering info about<br>User experience.</p></a></li>
-                        <li><a href="ios-app-development.html" class="dropdownpop">Support & Consultation<br><p>Optional sub-title offering info about<br>Support and Consultation.</p></a></li>
-                        <li><a href="ios-app-development.html" class="dropdownpop">technologies<br><p>Optional sub-title offering info about<br>Technologies.</p></a></li>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="android-app-development.html" class="dropdownpop"><i class="fa fa-apple" aria-hidden="true"></i> Mobile Apps<br><p>Optional sub-title offering info about<br>Web Apps.</p></a></li>
+                                    <li><a href="android-app-development.html" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> Web Apps<br><p>Optional sub-title offering info about<br>Web Apps.</p></a></li>
+                                    <li><a href="ios-app-development.html" class="dropdownpop">Design Sprints<br><p>Optional sub-title offering info about<br>Design Sprints.</p></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#" class="dropdownpop">User Experience<br><p>Optional sub-title offering info about<br>User experience.</p></a></li>
+                                    <li><a href="ios-app-development.html" class="dropdownpop">Ideation<br><p>Optional sub-title offering info about<br>Support and Consultation.</p></a></li>
+                                    <li><a href="ios-app-development.html" class="dropdownpop">Support and Consultancy<br><p>Optional sub-title offering info about<br>Technologies.</p></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12">
+                                <ul class="dropdown-section">
+                                    <p>Here's a link to more information about mobile development.</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Technologies</a>
+                    <ul class="dropdown-menu epdropdown" style="width: 350px;">
+                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> MongoDB</a></li>
+                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> NodeJS</a></li>
+                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> AngularJS</a></li>
+                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> Xamarin</a></li>
                         <ul class="dropdown-section">
                         <p>Here's a link to more information about mobile development.</p>
                         </ul>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Work</a>
-                    <!--<ul class="dropdown-menu epdropdown" style="width: 350px;">
-                        <li><a href="#" class="dropdownsimple">Overview</a></li>
-                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> MongoDB</a></li>
-                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> NodeJS</a></li>
-                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> AngularJS</a></li>
-                        <ul class="dropdown-section">
-                        <p>Here's a link to more information about mobile development.</p>
-                        </ul>
-                    </ul>-->
-                </li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <!--<li><a href="#">Work</a></li>-->
+                <li><a href="#">Careers</a></li>
+                <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                         <ul class="dropdown-menu epdropdown" style="width: 350px;">
                         <li><a href="#" class="dropdownsimple">History and Team</a></li>
                         <li><a href="#" class="dropdownsimple">Careers</a></li>
                         <!--<li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> History & Team</a></li>
                         <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> Careers</a></li>
                         <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> NodeJS</a></li>
-                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> AngularJS</a></li>-->
+                        <li><a href="#" class="dropdownpop"><i class="fa fa-html5" aria-hidden="true"></i> AngularJS</a></li>
                         <ul class="dropdown-section">
                         <p>Here's a link to more information about mobile development.</p>
                         </ul>
                     </ul>
                 </li>
-            </ul>
+            </ul>-->
             <ul class="nav navbar-nav company" style="margin-left: 10vw;">
+                <li><a href="#" class="active">Team</a></li>
                 <li><a href="#">Blog</a></li>
                 <!--<li><a href="#">About</a></li>-->
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-right: 0px!important;">Contact</a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-right: 0px!important; margin-right: 0px;">Contact</a>
                     <ul class="dropdown-menu epdropdown" style="width: 400px;">
                         <li><a href="#" class="dropdownsimple">Culture</a></li>
                         <li><a href="#" class="dropdownsimple">Team</a></li>
@@ -86,6 +102,9 @@
                         <li><a href="#" class="dropdownsimple">Development Outsourcing</a></li>
                         <li><a href="#" class="dropdownsimple">Support and Consultation</a></li>
                         <ul class="dropdown-section">
+                            <div class="row" style="height: 300px;">
+                                <img src="https://api.mapbox.com/styles/v1/mapbox/light-v9/static/0.116554,52.209777,13.90,0.00,0.00/600x400@2x?access_token=pk.eyJ1IjoiZGFuaWVsZ3Vlc3RkZXNpZ24iLCJhIjoiNzZhOHpHOCJ9.RbsO2Z1d6tUIdqscT_L8Pw" width="400" height="300"alt="Mapbox Light" />
+                            </div>
                         <li><a href="#" class="dropdownsimple">Contact Information</a></li>
                         <li><a href="#" class="dropdowncontact">01234 567 890</a></li>
                         <li><a href="#" class="dropdowncontact">email@account.co.uk</a></li>
@@ -94,7 +113,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav contact" style="margin-left: 5vw;">
-                <li><a href="#" class="navcontact button button-vimportant-action bounce">01234 567 890</a></li>
+                <li><a style="padding: 10px 15px!important; background: #40B0FF;" href="#" class="navcontact button button-vimportant-action bounce">01234 567 890</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -103,31 +122,30 @@
 
 <!-- HEADER TEST -->
 <header>
-<div class="epheaderhomebg" style="width: 100%; height: 62vh; background-image: url('placeholder-app-image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
-    <div class="gradient-bg gradient-bg-2" style="padding-top: 0px; height: 100%;">
-        <div class="col-md-12 col-sm-12">
-            <div class="container-global">
-                <div class="gradient-bg-content col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center; margin-top: 18vh;">
-                    <h2>Our work</h2>
-                    <p>Intro duction to our work and the technologies we work with,</p>
-                    <!--<div id="button-group" role="action-button-group" class="standard-button-group">
-                        <a href="#" title="button title" class="button button-vimportant-action bounce"><i class="fa fa-code" aria-hidden="true"></i> Really Important Action</a>
-                    </div>-->
+<div class="epheaderhomebg" style="width: 100%; height: 50vh; background-image: url('jellyfish-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+    <div class="greybg fluidheight container-fluid col-md-12 col-lg-12 col-sm-12" style="background:linear-gradient(45deg, rgba(64,176,255,1) 0%, rgba(64,176,255,0.94) 25%, rgba(64,176,255,0.8) 51%, rgba(64,176,255,0.94) 100%); height: 100%; top: 0px; position: absolute; padding-bottom: 0px;">
+        <div class="container-global">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center; margin-top: 4vh;">
+                <h2 style="font-size: 30px;font-weight: bold;line-height: 36px;letter-spacing: 0em;margin: 10px 0px 15px 0px;color: #fff; font-family: 'Montserrat', sans-serif;">Our Work</h2>
+                <p style="color: #fff;">Here is where the work page text will be placed.</p>
+                <div id="button-group" role="action-button-group" class="standard-button-group" style="margin-top: 10px;">
+                    <a href="#" title="button title" style="margin-right: 0px;" class="button button-vimportant-action bounce">Work with us</a>
                 </div>
             </div>
-        </div>
-        <!-- CALL US -->
-        <div class="callus col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding" style="position: absolute; bottom: 0px;">
-            <div class="container-global">
-                <div class="" style="padding: 25px 0px;">
-                    <h3>We've been <b>Developing</b> interactive websites <b>since 1997</b>. Call us: <a href="#">01223 690164</a> or use our <a href="#">enquiry form.</a></h3>
-                </div>
             </div>
         </div>
-        <!-- CALL US END -->
     </div>
 </div>
 </header>
+<!-- SKEW BG SECTION -->
+<section>
+    <div class="whitebg container-fluid col-md-12 col-lg-12 col-sm-12 nopaddingleft nopaddingright">
+        <!-- SPAN BG -->
+        <span class="fullwhiteskew" style="background: #fff;width: 100vw; height: 21vh; min-height: 200px; position: absolute;transform: skewY(-6deg);top: -115px;"></span>
+        <!-- SPAN BG -->
+    </div>
+</section>
+<!-- SKEW BG SECTION END -->
 <!-- HEADER TEST END -->
 
 <!-- INTERCOM CHAT -->
