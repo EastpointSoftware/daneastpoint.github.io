@@ -18,7 +18,7 @@
     background: linear-gradient(45deg, rgba(64,176,255,1) 0%, rgba(64,176,255,0.94) 25%, rgba(64,176,255,0.8) 51%, rgba(64,176,255,0.94) 100%);
         padding: 50px 80px;
         width: 100%;
-        min-height: 474px;
+        height: 420px;
 }
 .happyclients a.button.button-vimportant-action {
         background: #338ccc;
