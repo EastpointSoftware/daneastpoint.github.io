@@ -397,7 +397,7 @@ h3 {
     font-weight: 200;
     margin-bottom: 30px;
 }
-.happyclients h3 {
+.happyclients h3, h3 {
     color: #ffffff;
     margin-top: 20px;
 }
