@@ -76,7 +76,10 @@
         display: block;
         padding: 0px 30px;
         box-shadow: none;
-}
+    }
+    .epcontentblockitem {
+        width: 100%;
+    }
 }
 /* NEW CSS FOR FINAL DESIGN */
 
