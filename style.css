@@ -30,6 +30,13 @@
     box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
     margin-bottom: 50px;
 }
+.epcontentblockitem {
+    background-color: #40B0FF;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
