@@ -8,6 +8,12 @@
     transform: skewY(-6deg);
     top: -115px;
 }
+.happyclients {
+        background-color: #40B0FF;
+        padding: 50px 80px;
+        width: 100%;
+        min-height: 455px;
+    }
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
