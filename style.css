@@ -91,6 +91,9 @@
     .epcontentblockitem {
         width: 100%!important;
     }
+    #resize.epcontentblockitem {
+        height: 200px;
+    }
 }
 /* NEW CSS FOR FINAL DESIGN */
 
