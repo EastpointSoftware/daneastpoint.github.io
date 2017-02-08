@@ -65,9 +65,10 @@
         font-weight: 200;
     }
     .cotnentblockcontainer {
-    width: 100%;
-    display: block;
-    padding: 0px 30px;
+        width: 100%;
+        display: block;
+        padding: 0px 30px;
+        box-shadow: none;
 }
 }
 /* NEW CSS FOR FINAL DESIGN */
