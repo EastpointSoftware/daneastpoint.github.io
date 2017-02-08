@@ -32,10 +32,17 @@
 }
 .epcontentblockitem {
     background-color: #40B0FF;
-    height: 300px;
+    width: 25%;
+    height: 360px;
+}
+.epcontentblockitembg {
+    background-size: 40%;
+    height: inherit;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+}
 }
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
