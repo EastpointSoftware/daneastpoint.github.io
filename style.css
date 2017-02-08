@@ -47,9 +47,15 @@
     }
     .happyclients, .happyclientquote {
         padding: 30px;
+        height: inherit!important;
     }
     .happyclients h3 {
         margin-top: 0px!important;
+    }
+    .happyclientquote p.large {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
     }
 }
 /* NEW CSS FOR FINAL DESIGN */
