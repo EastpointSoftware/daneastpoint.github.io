@@ -24,6 +24,9 @@
     top: -65px;
     }
     .button-vimportant-action {
+        display: block;
+        text-align: center;
+        width: initial;
         z-index: 1;
     }
     p.large {
@@ -41,7 +44,11 @@
     }
     .happyclients h3 {
         margin-top: 0px!important;
-}
+    }
+    .happyclients.button-vimportant-action {
+        background: #338ccc;
+        color: #fff;
+    }
 }
 /* NEW CSS FOR FINAL DESIGN */
 
@@ -217,9 +224,8 @@ hr {
 .button-vimportant-action {
     white-space: nowrap;
     display: inline-block;
-    height: 40px;
     line-height: 40px;
-    padding: 0 14px;
+    padding: 6px 14px;
     box-shadow: 8px 8px 20px 0px rgba(46,61,73,0.15);
     background: #3ecf8e;
     border-radius: 4px;
