@@ -45,7 +45,7 @@
     .happyclients h3 {
         margin-top: 0px!important;
     }
-    .happyclients.button-vimportant-action {
+    .happyclients a.button.button-vimportant-action {
         background: #338ccc;
         color: #fff;
     }
