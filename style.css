@@ -43,6 +43,11 @@
     background-size: cover;
     position: relative;
 }
+.epcontent {
+    width: initial;
+    height: auto;
+    padding: 15px;
+}
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
