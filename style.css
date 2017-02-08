@@ -19,6 +19,10 @@
         width: 100%;
         min-height: 455px;
 }
+.happyclients a.button.button-vimportant-action {
+        background: #338ccc;
+        color: #fff;
+    }
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
@@ -45,10 +49,6 @@
     }
     .happyclients h3 {
         margin-top: 0px!important;
-    }
-    .happyclients a.button.button-vimportant-action {
-        background: #338ccc;
-        color: #fff;
     }
 }
 /* NEW CSS FOR FINAL DESIGN */
