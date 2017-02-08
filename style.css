@@ -56,7 +56,7 @@
     .happyclientquote p.large {
         font-size: 18px;
         line-height: 24px;
-        font-weight: 400;
+        font-weight: 200;
     }
 }
 /* NEW CSS FOR FINAL DESIGN */
@@ -1069,6 +1069,10 @@ i.fa.fa-google-plus {
 }
 .footertop a {
     color: #8898aa!important;
+}
+.footertop span {
+    border-bottom: 1px solid #8898aa;
+    padding-bottom: 1px;
 }
 .footertop a:hover {
     text-decoration: none;
