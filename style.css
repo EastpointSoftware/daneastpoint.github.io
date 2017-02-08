@@ -40,8 +40,7 @@
         padding: 30px;
     }
     .happyclients h3 {
-        color: #ffffff;
-        margin-top: 0px;
+        margin-top: 0px!important;
 }
 }
 /* NEW CSS FOR FINAL DESIGN */
@@ -410,7 +409,8 @@ h3 {
 }
 .happyclients h3, h3 {
     color: #ffffff;
-    margin-top: 20px!important;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 p.large {
     color: #424770;
