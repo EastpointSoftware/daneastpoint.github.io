@@ -36,7 +36,7 @@
     height: 360px;
 }
 .epcontentblockitembg {
-    background-size: 40%;
+    background-size: 40%!important;
     height: inherit;
     background-repeat: no-repeat;
     background-position: center;
