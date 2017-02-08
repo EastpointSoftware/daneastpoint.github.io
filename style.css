@@ -48,6 +48,7 @@
     .happyclients, .happyclientquote {
         padding: 30px;
         height: inherit!important;
+        min-height: inherit;
     }
     .happyclients h3 {
         margin-top: 0px!important;
