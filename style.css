@@ -90,6 +90,7 @@
     }
     .epcontentblockitem {
         width: 100%!important;
+        box-shadow: box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
     }
     #resize.epcontentblockitem {
         height: 200px;
