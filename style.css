@@ -1,3 +1,24 @@
+/* NEW CSS FOR FINAL DESIGN */
+.fullwhiteskew {
+    background: #fff;
+    width: 100vw;
+    height: 21vh;
+    min-height: 200px;
+    position: absolute;
+    transform: skewY(-6deg);
+    top: -115px;
+}
+@media screen and (max-width: 400px) {
+    #header.fullwhiteskew {
+    top: -65px;
+    }
+    #buttongroup {
+        z-index: 1;
+    }
+}
+/* NEW CSS FOR FINAL DESIGN */
+
+
 body {
     font-family: 'Open Sans', sans-serif!important;
     -webkit-font-smoothing: antialiased;
@@ -1308,27 +1329,5 @@ i.fa.fa-google-plus {
     animation: ani-mouse 2.5s linear infinite;
 /* ANIMATED SCROLL ICON */
 
-
-
-
-
-/* NEW CSS FOR FINAL DESIGN */
-.fullwhiteskew {
-    background: #fff;
-    width: 100vw;
-    height: 21vh;
-    min-height: 200px;
-    position: absolute;
-    transform: skewY(-6deg);
-    top: -115px;
-}
-@media screen and (max-width: 400px) {
-    #header.fullwhiteskew {
-    top: -65px;
-    }
-    #buttongroup {
-        z-index: 1;
-    }
-}
 
 /* NEW CSS FOR FINAL DESIGN */
