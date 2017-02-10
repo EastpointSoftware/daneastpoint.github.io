@@ -69,6 +69,22 @@
     line-height: 22px;
     letter-spacing: 0.03em;
 }
+.servicelinks2 a {
+    border-bottom: 1px solid rgba(66,71,112,0.7);
+    padding-bottom: 1px;
+    color: rgba(66,71,112,0.7);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+}
+.servicelinks2 {
+    color: #424770;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 10px 0px;
+}
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
