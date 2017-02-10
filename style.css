@@ -62,9 +62,9 @@
 }
 
 .servicelinks a {
-    border-bottom: 1px solid rgba(66,71,112,0.8);
+    border-bottom: 1px solid #424770;
     padding-bottom: 1px;
-    color: rgba(66,71,112,0.8);
+    color: #424770;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
