@@ -29,6 +29,10 @@
         background: #338ccc;
         color: #fff;
 }
+.teamquote a.button.button-vimportant-action {
+        background: #338ccc;
+        color: #fff;
+}
 .cotnentblockcontainer {
     width: 100%;
     display: inline-flex;
