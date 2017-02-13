@@ -1,3 +1,16 @@
+.blue{
+  background-color: #77acd4;
+}
+.blue {
+   mix-blend-mode: multiply;
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1.2);
+}
+.blue::after{
+  background-color: #033dc5;
+  mix-blend-mode: lighten;
+}
+
 /* NEW CSS FOR FINAL DESIGN */
 .fullwhiteskew {
     background: #fff;
