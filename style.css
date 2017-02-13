@@ -1,12 +1,12 @@
 .blue{
   background-color: #77acd4;
 }
-.blue {
+.blueover {
    mix-blend-mode: multiply;
   -webkit-filter: grayscale(100%) contrast(1.2);
   filter: grayscale(100%) contrast(1.2);
 }
-.blue:after{
+.blueover {
   background-color: #033dc5;
   mix-blend-mode: lighten;
 }
