@@ -26,8 +26,7 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="navbar-left">
-                <a class="navbar-brand hide-scroll" href="index.html"><img src="eastpoint-brand-white@2x.png" width="130px" /></a>
-                <a class="navbar-brand show-scroll" href="index.html"><img src="eastpoint-brand@2x.png" width="130px" /></a>
+                <a class="navbar-brand" href="index.html"><img src="eastpoint-brand@2x.png" width="130px" /></a>
             </div>
         </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -128,7 +127,7 @@
             </div>
             </div>
         </div>
-    </div>
+    </div>ddddd
 </header>
 <!-- SKEW BG SECTION -->
 <section>
@@ -360,6 +359,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if(scroll >= 300) {
+        $(".navbar").addClass("navbar-fixed-top").fadeIn();
         $(".contact").addClass("contact-appear");
         $(".company").css("margin-left","0px");
         $(".navbar").addClass("fixed-bg").fadeIn();
@@ -367,6 +367,7 @@ $(window).scroll(function() {
         $(".show-scroll").show();
         $(".hide-scroll").hide();
     } else {
+        $(".navbar").removeClass("fixed-bg").fadeOut();
         $(".navbar").removeClass("navbar-fixed-top").fadeOut();
         $(".contact").removeClass("contact-appear");
         $(".company").css("margin-left","10vh");
