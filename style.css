@@ -6,7 +6,7 @@
   -webkit-filter: grayscale(100%) contrast(1.2);
   filter: grayscale(100%) contrast(1.2);
 }
-.blue::after{
+.blue:after{
   background-color: #033dc5;
   mix-blend-mode: lighten;
 }
