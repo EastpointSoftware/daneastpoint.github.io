@@ -504,8 +504,423 @@
     </div>    
 </footer>
 <!-- FOOTER BOTTOM END -->
+#intercom
 </body>
 <script>
+console.clear();
+
+const { Component, PropTypes } = React;
+const { findDOMNode, render } = ReactDOM;
+const { Motion, spring } = ReactMotion;
+const { noop } = _;
+const cx = classNames;
+
+const presets = {
+  default: { stiffness: 330, damping: 20 },
+};
+
+const messages = [
+  {
+    read: true,
+    messages: [
+      {
+        date: new Date(2016, 7, 10, 5, 1),
+        user: "John Doe",
+        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
+      },
+      {
+        date: new Date(2016, 7, 11, 20, 1),
+        user: "Jane Doe",
+        message: "Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
+      },
+      {
+        date: new Date(),
+        user: "Jane Doe",
+        message: "Praeclare inter se cohaerere.",
+      },
+    ],
+  },
+  {
+    read: true,
+    messages: [
+      {
+        date: new Date(2016, 7, 5, 5, 1),
+        user: "John Doe",
+        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
+      },
+      {
+        date: new Date(2016, 7, 5, 40, 1),
+        user: "Jane Doe",
+        message: "Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
+      },
+      {
+        date: new Date(2016, 7, 8, 40, 1),
+        user: "Jane Doe",
+        message: "Praeclare inter se cohaerere.",
+      },
+      {
+        date: new Date(),
+        user: "John Doe",
+        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
+      },
+    ],
+  }
+];
+
+/**
+ * <Intercom />
+ */
+class Intercom extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      active: false,
+      hasTriggered: false,
+      messages: props.messages || [],
+    };
+    
+    this._handleClick = this._handleClick.bind(this);
+  }
+  
+  componentDidMount() {}
+  
+  _handleClick() {
+    this.setState({
+      active: !this.state.active,
+    });
+  }
+  
+  render() {
+    const { active, messages } = this.state;
+
+    return (
+      <div className="intercom">
+        {active ? <IntercomBase active={active} messages={messages} /> : false}
+
+        <Button 
+          active={active}
+          count={messages.length}
+          onClick={this._handleClick}
+        />
+      </div>
+    );
+  }
+}
+
+/**
+ * <IntercomBase />
+ */
+class IntercomBase extends Component {
+  constructor() {
+    super();
+    
+    this.state = {
+      height: 670,
+      stable: false,
+    }
+    
+    this._handleRest = this._handleRest.bind(this);
+  }
+  
+  componentDidMount() {
+    const height = jQuery(window).height();
+    
+    this.setState({
+      height: height - (height * 0.2),
+    });
+  }
+  
+  componentWillUnmount() {
+    this.setState({
+      stable: false,
+    });
+  }
+
+  _handleRest() {
+    this.setState({
+      stable: true,
+    });
+  }
+  
+  render() {
+    const { active, messages } = this.props;
+    const { stable } = this.state;
+
+    return (
+      <Motion
+        defaultStyle={{
+          y: 20,
+          opacity: 0,
+        }}
+        style={{
+          y: spring(active ? 0 : 20, presets.default),
+          opacity: spring(active ? 1 : 0, presets.default),
+        }}
+        onRest={this._handleRest}
+      >
+        {interpolatingStyles=>
+          <div 
+            className="intercom-base"
+            style={{
+              height: this.state.height,
+              opacity: interpolatingStyles.opacity,
+              transform: `translateY(${interpolatingStyles.y}px)`
+            }}
+          >
+            <IntercomHeader active={active} rest={stable} />
+            <ChatList messages={messages} />
+          </div>
+        }
+      </Motion>
+    );
+  }
+}
+
+/**
+ * <IntercomHeader />
+ */
+const IntercomHeader = ({ active, rest }) => (
+  <Motion
+    defaultStyle={{
+      y: 60,
+    }}
+    style={{
+      y: spring(active && rest ? 60 : 60, presets.default),
+    }}
+  >
+    {interpolatingStyles =>
+      <header
+        className="intercom-header"
+        style={{
+          height: interpolatingStyles.y,
+          // transform: `translate(${interpolatingStyles.height}px)`,
+        }}
+      >
+      </header>
+    }
+  </Motion>
+);
+
+/**
+ * <ChatList />
+ */
+class ChatList extends Component {
+  render() {
+    const { messages } = this.props;
+    
+    // TODO, add styles
+    return (
+      <div className="intercom-list">
+        {messages.map((item, i) => (
+          <div 
+            className="intercom-list__item"
+            key={`list-item-${i}`}
+          >
+            <div className="intercom-user--avatar">
+              <img src="//placehold.it/80/1F8CEB/FFF?text=J" />
+            </div>
+            <div className="intercom-message intercom-message--trim">
+              <div className="intercom-message__header">
+                <div className="intercom-message__name">
+                  {item.messages[item.messages.length - 1].user}
+                </div>
+                <div className="intercom-date">
+                  <span className="intercom-date__month">
+                    {new Date(item.messages[item.messages.length - 1].date).getMonth()}
+                  </span>
+                  <span className="intercom-date__divider" />
+                  <span className="intercom-date__day">
+                    {new Date(item.messages[item.messages.length - 1].date).getDate()}
+                  </span>
+                </div>
+              </div>
+              <div className="intercom-message__content">
+                {item.messages[item.messages.length - 1].message}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+}
+
+/**
+ * <Button />
+ */
+class Button extends Component {
+  constructor() {
+    super();
+    
+    this.state = {
+      stable: false,
+    }
+    
+    this._handleRest = this._handleRest.bind(this);
+  }
+  
+  componentWillUnmount() {
+    this.setState({
+      stable: false,
+    });
+  }
+  
+  _handleRest() {
+    this.setState({
+      stable: true,
+    });
+  }
+  
+  render() {
+    const { active, className, count, onClick } = this.props;
+    
+    const { stable } = this.state;
+    
+    let classes = cx({
+      'intercom-button': true,
+      'intercom-button--active': active,
+    }, className);
+
+    return (
+      <Motion
+        defaultStyle={{
+          opacity: 0,
+          scale: 0,
+        }}
+        style={{
+          opacity: spring(1, presets.default),
+          scale: spring(1, presets.default),
+        }}
+        onRest={this._handleRest}
+      >
+        {interpolatingStyles =>
+          <button 
+            className={classes}
+            onClick={onClick || noop}
+            style={{
+              opacity: interpolatingStyles.opacity,
+              transform: `scale(${interpolatingStyles.scale})`
+            }}
+          >
+            <Badge active={active} count={count} stable={stable} />
+            <LaunchIcon active={active} />
+            <CloseIcon active={active} />
+          </button>
+        }
+      </Motion>
+    );
+  }
+};
+
+/**
+ * <Badge />
+ */
+const Badge = ({ active, count, stable }) => {
+  let classes = cx({
+    'intercom-badge': true,
+    'intercom-badge--active': active,
+  });
+  
+  return (
+    <Motion
+      defaultStyle={{
+        opacity: 0,
+        scale: 0,
+      }}
+      style={{
+        opacity: spring(!active && stable ? 1 : 0, presets.default),
+        scale: spring(!active && stable ? 1 : 0, presets.default),
+      }}
+    >
+      {interpolatingStyles =>
+        <div 
+          className={classes}
+          style={{
+            opacity: interpolatingStyles.opacity,
+            transform: `
+              translate(-100%, 100%)
+              scale(${interpolatingStyles.scale})
+            `
+          }}
+        >
+          {count || 0}
+        </div>
+      }
+    </Motion>
+  );
+};
+
+/**
+ * <CloseIcon />
+ */
+const CloseIcon = ({ active }) => (
+  <Motion 
+    defaultStyle={{
+      opacity: 0,
+      rotate: -45,
+      scale: 0,
+    }}
+    style={{
+      opacity: spring(active ? 1 : 0, presets.default),
+      rotate: spring(active ? 0 : -45, presets.default),
+      scale: spring(active ? 1 : 0, presets.default),
+    }}
+  >
+    {interpolatingStyles =>
+      <img 
+        alt="Close Icon"
+        className="intercom-icon intercom-icon--close"
+        src="https://js.intercomcdn.com/images/launcher-close-icon@2x.d4b89535.png"
+        style={{
+          opacity: interpolatingStyles.opacity,
+          transform: `
+            rotate(${interpolatingStyles.rotate}deg) 
+            scale(${interpolatingStyles.scale})
+            translate(-50%, -50%)
+          `,
+        }} 
+      />
+    }
+  </Motion>
+);
+
+/**
+ * <LaunchIcon />
+ */
+const LaunchIcon = ({ active }) => (
+  <Motion 
+    defaultStyle={{
+      opacity: 1,
+      rotate: 0,
+      scale: 1,
+    }}
+    style={{
+      opacity: spring(active ? 0 : 1, presets.default),
+      rotate: spring(active ? 45 : 0, presets.default),
+      scale: spring(active ? 0 : 1, presets.default),
+    }}
+  >
+    {interpolatingStyles =>
+      <img
+        alt="Launcher Icon"
+        className="intercom-icon intercom-icon--launcher"
+        src="https://js.intercomcdn.com/images/launcher-icon@2x.e005daae.png"
+        style={{
+          opacity: interpolatingStyles.opacity,
+          transform: `
+            rotate(${interpolatingStyles.rotate}deg) 
+            scale(${interpolatingStyles.scale})
+            translate(-50%, -50%)
+          `,
+        }}
+      />
+    }
+  </Motion>
+);
+
+render(<Intercom messages={messages} />, document.getElementById('intercom'));
+
 $(document).ready(function(){
     $(".dropdown-toggle").dropdown();
     $(".show-scroll").hide();
