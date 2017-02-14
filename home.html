@@ -508,11 +508,33 @@
 <script>
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
 
 console.clear();
 
@@ -531,7 +553,10 @@ var noop = _ref.noop;
 var cx = classNames;
 
 var presets = {
-  default: { stiffness: 330, damping: 20 }
+  default: {
+    stiffness: 330,
+    damping: 20
+  }
 };
 
 var messages = [{
@@ -574,7 +599,7 @@ var messages = [{
  * <Intercom />
  */
 
-var Intercom = function (_Component) {
+var Intercom = function(_Component) {
   _inherits(Intercom, _Component);
 
   function Intercom(props) {
@@ -606,9 +631,13 @@ var Intercom = function (_Component) {
     var messages = _state.messages;
 
     return React.createElement(
-      "div",
-      { className: "intercom" },
-      active ? React.createElement(IntercomBase, { active: active, messages: messages }) : false,
+      "div", {
+        className: "intercom"
+      },
+      active ? React.createElement(IntercomBase, {
+        active: active,
+        messages: messages
+      }) : false,
       React.createElement(Button, {
         active: active,
         count: messages.length,
@@ -624,7 +653,7 @@ var Intercom = function (_Component) {
  * <IntercomBase />
  */
 
-var IntercomBase = function (_Component2) {
+var IntercomBase = function(_Component2) {
   _inherits(IntercomBase, _Component2);
 
   function IntercomBase() {
@@ -670,8 +699,7 @@ var IntercomBase = function (_Component2) {
     var stable = this.state.stable;
 
     return React.createElement(
-      Motion,
-      {
+      Motion, {
         defaultStyle: {
           y: 20,
           opacity: 0
@@ -682,10 +710,9 @@ var IntercomBase = function (_Component2) {
         },
         onRest: this._handleRest
       },
-      function (interpolatingStyles) {
+      function(interpolatingStyles) {
         return React.createElement(
-          "div",
-          {
+          "div", {
             className: "intercom-base",
             style: {
               height: _this3.state.height,
@@ -693,8 +720,13 @@ var IntercomBase = function (_Component2) {
               transform: "translateY(" + interpolatingStyles.y + "px)"
             }
           },
-          React.createElement(IntercomHeader, { active: active, rest: stable }),
-          React.createElement(ChatList, { messages: messages })
+          React.createElement(IntercomHeader, {
+            active: active,
+            rest: stable
+          }),
+          React.createElement(ChatList, {
+            messages: messages
+          })
         );
       }
     );
@@ -711,8 +743,7 @@ var IntercomHeader = function IntercomHeader(_ref2) {
   var active = _ref2.active;
   var rest = _ref2.rest;
   return React.createElement(
-    Motion,
-    {
+    Motion, {
       defaultStyle: {
         y: 60
       },
@@ -720,7 +751,7 @@ var IntercomHeader = function IntercomHeader(_ref2) {
         y: spring(active && rest ? 60 : 60, presets.default)
       }
     },
-    function (interpolatingStyles) {
+    function(interpolatingStyles) {
       return React.createElement("header", {
         className: "intercom-header",
         style: {
@@ -735,7 +766,7 @@ var IntercomHeader = function IntercomHeader(_ref2) {
  * <ChatList />
  */
 
-var ChatList = function (_Component3) {
+var ChatList = function(_Component3) {
   _inherits(ChatList, _Component3);
 
   function ChatList() {
@@ -750,50 +781,62 @@ var ChatList = function (_Component3) {
     // TODO, add styles
 
     return React.createElement(
-      "div",
-      { className: "intercom-list" },
-      messages.map(function (item, i) {
+      "div", {
+        className: "intercom-list"
+      },
+      messages.map(function(item, i) {
         return React.createElement(
-          "div",
-          {
+          "div", {
             className: "intercom-list__item",
             key: "list-item-" + i
           },
           React.createElement(
-            "div",
-            { className: "intercom-user--avatar" },
-            React.createElement("img", { src: "//placehold.it/80/1F8CEB/FFF?text=J" })
+            "div", {
+              className: "intercom-user--avatar"
+            },
+            React.createElement("img", {
+              src: "//placehold.it/80/1F8CEB/FFF?text=J"
+            })
           ),
           React.createElement(
-            "div",
-            { className: "intercom-message intercom-message--trim" },
+            "div", {
+              className: "intercom-message intercom-message--trim"
+            },
             React.createElement(
-              "div",
-              { className: "intercom-message__header" },
+              "div", {
+                className: "intercom-message__header"
+              },
               React.createElement(
-                "div",
-                { className: "intercom-message__name" },
+                "div", {
+                  className: "intercom-message__name"
+                },
                 item.messages[item.messages.length - 1].user
               ),
               React.createElement(
-                "div",
-                { className: "intercom-date" },
+                "div", {
+                  className: "intercom-date"
+                },
                 React.createElement(
-                  "span",
-                  { className: "intercom-date__month" },
+                  "span", {
+                    className: "intercom-date__month"
+                  },
                   new Date(item.messages[item.messages.length - 1].date).getMonth()
                 ),
-                React.createElement("span", { className: "intercom-date__divider" }),
+                React.createElement("span", {
+                  className: "intercom-date__divider"
+                }),
                 React.createElement(
-                  "span",
-                  { className: "intercom-date__day" },
+                  "span", {
+                    className: "intercom-date__day"
+                  },
                   new Date(item.messages[item.messages.length - 1].date).getDate()
                 )
               )
             ),
             React.createElement(
-              "div",
-              { className: "intercom-message__content" },
+              "div", {
+                className: "intercom-message__content"
+              },
               item.messages[item.messages.length - 1].message
             )
           )
@@ -809,7 +852,7 @@ var ChatList = function (_Component3) {
  * <Button />
  */
 
-var Button = function (_Component4) {
+var Button = function(_Component4) {
   _inherits(Button, _Component4);
 
   function Button() {
@@ -851,8 +894,7 @@ var Button = function (_Component4) {
     }, className);
 
     return React.createElement(
-      Motion,
-      {
+      Motion, {
         defaultStyle: {
           opacity: 0,
           scale: 0
@@ -863,10 +905,9 @@ var Button = function (_Component4) {
         },
         onRest: this._handleRest
       },
-      function (interpolatingStyles) {
+      function(interpolatingStyles) {
         return React.createElement(
-          "button",
-          {
+          "button", {
             className: classes,
             onClick: onClick || noop,
             style: {
@@ -874,9 +915,17 @@ var Button = function (_Component4) {
               transform: "scale(" + interpolatingStyles.scale + ")"
             }
           },
-          React.createElement(Badge, { active: active, count: count, stable: stable }),
-          React.createElement(LaunchIcon, { active: active }),
-          React.createElement(CloseIcon, { active: active })
+          React.createElement(Badge, {
+            active: active,
+            count: count,
+            stable: stable
+          }),
+          React.createElement(LaunchIcon, {
+            active: active
+          }),
+          React.createElement(CloseIcon, {
+            active: active
+          })
         );
       }
     );
@@ -901,8 +950,7 @@ var Badge = function Badge(_ref3) {
   });
 
   return React.createElement(
-    Motion,
-    {
+    Motion, {
       defaultStyle: {
         opacity: 0,
         scale: 0
@@ -912,10 +960,9 @@ var Badge = function Badge(_ref3) {
         scale: spring(!active && stable ? 1 : 0, presets.default)
       }
     },
-    function (interpolatingStyles) {
+    function(interpolatingStyles) {
       return React.createElement(
-        "div",
-        {
+        "div", {
           className: classes,
           style: {
             opacity: interpolatingStyles.opacity,
@@ -934,8 +981,7 @@ var Badge = function Badge(_ref3) {
 var CloseIcon = function CloseIcon(_ref4) {
   var active = _ref4.active;
   return React.createElement(
-    Motion,
-    {
+    Motion, {
       defaultStyle: {
         opacity: 0,
         rotate: -45,
@@ -947,7 +993,7 @@ var CloseIcon = function CloseIcon(_ref4) {
         scale: spring(active ? 1 : 0, presets.default)
       }
     },
-    function (interpolatingStyles) {
+    function(interpolatingStyles) {
       return React.createElement("img", {
         alt: "Close Icon",
         className: "intercom-icon intercom-icon--close",
@@ -967,8 +1013,7 @@ var CloseIcon = function CloseIcon(_ref4) {
 var LaunchIcon = function LaunchIcon(_ref5) {
   var active = _ref5.active;
   return React.createElement(
-    Motion,
-    {
+    Motion, {
       defaultStyle: {
         opacity: 1,
         rotate: 0,
@@ -980,7 +1025,7 @@ var LaunchIcon = function LaunchIcon(_ref5) {
         scale: spring(active ? 0 : 1, presets.default)
       }
     },
-    function (interpolatingStyles) {
+    function(interpolatingStyles) {
       return React.createElement("img", {
         alt: "Launcher Icon",
         className: "intercom-icon intercom-icon--launcher",
@@ -994,7 +1039,10 @@ var LaunchIcon = function LaunchIcon(_ref5) {
   );
 };
 
-render(React.createElement(Intercom, { messages: messages }), document.getElementById('intercom'));
+render(React.createElement(Intercom, {
+  messages: messages
+}), document.getElementById('intercom'));
+
 $(document).ready(function(){
     $(".dropdown-toggle").dropdown();
     $(".show-scroll").hide();
