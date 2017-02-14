@@ -507,420 +507,495 @@
 #intercom
 </body>
 <script>
+"use strict";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 console.clear();
 
-const { Component, PropTypes } = React;
-const { findDOMNode, render } = ReactDOM;
-const { Motion, spring } = ReactMotion;
-const { noop } = _;
-const cx = classNames;
+var _React = React;
+var Component = _React.Component;
+var PropTypes = _React.PropTypes;
+var _ReactDOM = ReactDOM;
+var findDOMNode = _ReactDOM.findDOMNode;
+var render = _ReactDOM.render;
+var _ReactMotion = ReactMotion;
+var Motion = _ReactMotion.Motion;
+var spring = _ReactMotion.spring;
+var _ref = _;
+var noop = _ref.noop;
 
-const presets = {
-  default: { stiffness: 330, damping: 20 },
+var cx = classNames;
+
+var presets = {
+  default: { stiffness: 330, damping: 20 }
 };
 
-const messages = [
-  {
-    read: true,
-    messages: [
-      {
-        date: new Date(2016, 7, 10, 5, 1),
-        user: "John Doe",
-        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
-      },
-      {
-        date: new Date(2016, 7, 11, 20, 1),
-        user: "Jane Doe",
-        message: "Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
-      },
-      {
-        date: new Date(),
-        user: "Jane Doe",
-        message: "Praeclare inter se cohaerere.",
-      },
-    ],
-  },
-  {
-    read: true,
-    messages: [
-      {
-        date: new Date(2016, 7, 5, 5, 1),
-        user: "John Doe",
-        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
-      },
-      {
-        date: new Date(2016, 7, 5, 40, 1),
-        user: "Jane Doe",
-        message: "Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
-      },
-      {
-        date: new Date(2016, 7, 8, 40, 1),
-        user: "Jane Doe",
-        message: "Praeclare inter se cohaerere.",
-      },
-      {
-        date: new Date(),
-        user: "John Doe",
-        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere.",
-      },
-    ],
-  }
-];
+var messages = [{
+  read: true,
+  messages: [{
+    date: new Date(2016, 7, 10, 5, 1),
+    user: "John Doe",
+    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere."
+  }, {
+    date: new Date(2016, 7, 11, 20, 1),
+    user: "Jane Doe",
+    message: "Illud dico, ea, quae dicat, praeclare inter se cohaerere."
+  }, {
+    date: new Date(),
+    user: "Jane Doe",
+    message: "Praeclare inter se cohaerere."
+  }]
+}, {
+  read: true,
+  messages: [{
+    date: new Date(2016, 7, 5, 5, 1),
+    user: "John Doe",
+    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere."
+  }, {
+    date: new Date(2016, 7, 5, 40, 1),
+    user: "Jane Doe",
+    message: "Illud dico, ea, quae dicat, praeclare inter se cohaerere."
+  }, {
+    date: new Date(2016, 7, 8, 40, 1),
+    user: "Jane Doe",
+    message: "Praeclare inter se cohaerere."
+  }, {
+    date: new Date(),
+    user: "John Doe",
+    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud dico, ea, quae dicat, praeclare inter se cohaerere."
+  }]
+}];
 
 /**
  * <Intercom />
  */
-class Intercom extends Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {
+
+var Intercom = function (_Component) {
+  _inherits(Intercom, _Component);
+
+  function Intercom(props) {
+    _classCallCheck(this, Intercom);
+
+    var _this = _possibleConstructorReturn(this, _Component.call(this, props));
+
+    _this.state = {
       active: false,
       hasTriggered: false,
-      messages: props.messages || [],
+      messages: props.messages || []
     };
-    
-    this._handleClick = this._handleClick.bind(this);
+
+    _this._handleClick = _this._handleClick.bind(_this);
+    return _this;
   }
-  
-  componentDidMount() {}
-  
-  _handleClick() {
+
+  Intercom.prototype.componentDidMount = function componentDidMount() {};
+
+  Intercom.prototype._handleClick = function _handleClick() {
     this.setState({
-      active: !this.state.active,
+      active: !this.state.active
     });
-  }
-  
-  render() {
-    const { active, messages } = this.state;
+  };
 
-    return (
-      <div className="intercom">
-        {active ? <IntercomBase active={active} messages={messages} /> : false}
+  Intercom.prototype.render = function render() {
+    var _state = this.state;
+    var active = _state.active;
+    var messages = _state.messages;
 
-        <Button 
-          active={active}
-          count={messages.length}
-          onClick={this._handleClick}
-        />
-      </div>
+    return React.createElement(
+      "div",
+      { className: "intercom" },
+      active ? React.createElement(IntercomBase, { active: active, messages: messages }) : false,
+      React.createElement(Button, {
+        active: active,
+        count: messages.length,
+        onClick: this._handleClick
+      })
     );
-  }
-}
+  };
+
+  return Intercom;
+}(Component);
 
 /**
  * <IntercomBase />
  */
-class IntercomBase extends Component {
-  constructor() {
-    super();
-    
-    this.state = {
+
+var IntercomBase = function (_Component2) {
+  _inherits(IntercomBase, _Component2);
+
+  function IntercomBase() {
+    _classCallCheck(this, IntercomBase);
+
+    var _this2 = _possibleConstructorReturn(this, _Component2.call(this));
+
+    _this2.state = {
       height: 670,
-      stable: false,
-    }
-    
-    this._handleRest = this._handleRest.bind(this);
-  }
-  
-  componentDidMount() {
-    const height = jQuery(window).height();
-    
-    this.setState({
-      height: height - (height * 0.2),
-    });
-  }
-  
-  componentWillUnmount() {
-    this.setState({
-      stable: false,
-    });
+      stable: false
+    };
+
+    _this2._handleRest = _this2._handleRest.bind(_this2);
+    return _this2;
   }
 
-  _handleRest() {
-    this.setState({
-      stable: true,
-    });
-  }
-  
-  render() {
-    const { active, messages } = this.props;
-    const { stable } = this.state;
+  IntercomBase.prototype.componentDidMount = function componentDidMount() {
+    var height = jQuery(window).height();
 
-    return (
-      <Motion
-        defaultStyle={{
+    this.setState({
+      height: height - height * 0.2
+    });
+  };
+
+  IntercomBase.prototype.componentWillUnmount = function componentWillUnmount() {
+    this.setState({
+      stable: false
+    });
+  };
+
+  IntercomBase.prototype._handleRest = function _handleRest() {
+    this.setState({
+      stable: true
+    });
+  };
+
+  IntercomBase.prototype.render = function render() {
+    var _this3 = this;
+
+    var _props = this.props;
+    var active = _props.active;
+    var messages = _props.messages;
+    var stable = this.state.stable;
+
+    return React.createElement(
+      Motion,
+      {
+        defaultStyle: {
           y: 20,
-          opacity: 0,
-        }}
-        style={{
+          opacity: 0
+        },
+        style: {
           y: spring(active ? 0 : 20, presets.default),
-          opacity: spring(active ? 1 : 0, presets.default),
-        }}
-        onRest={this._handleRest}
-      >
-        {interpolatingStyles=>
-          <div 
-            className="intercom-base"
-            style={{
-              height: this.state.height,
+          opacity: spring(active ? 1 : 0, presets.default)
+        },
+        onRest: this._handleRest
+      },
+      function (interpolatingStyles) {
+        return React.createElement(
+          "div",
+          {
+            className: "intercom-base",
+            style: {
+              height: _this3.state.height,
               opacity: interpolatingStyles.opacity,
-              transform: `translateY(${interpolatingStyles.y}px)`
-            }}
-          >
-            <IntercomHeader active={active} rest={stable} />
-            <ChatList messages={messages} />
-          </div>
-        }
-      </Motion>
+              transform: "translateY(" + interpolatingStyles.y + "px)"
+            }
+          },
+          React.createElement(IntercomHeader, { active: active, rest: stable }),
+          React.createElement(ChatList, { messages: messages })
+        );
+      }
     );
-  }
-}
+  };
+
+  return IntercomBase;
+}(Component);
 
 /**
  * <IntercomHeader />
  */
-const IntercomHeader = ({ active, rest }) => (
-  <Motion
-    defaultStyle={{
-      y: 60,
-    }}
-    style={{
-      y: spring(active && rest ? 60 : 60, presets.default),
-    }}
-  >
-    {interpolatingStyles =>
-      <header
-        className="intercom-header"
-        style={{
-          height: interpolatingStyles.y,
-          // transform: `translate(${interpolatingStyles.height}px)`,
-        }}
-      >
-      </header>
+
+var IntercomHeader = function IntercomHeader(_ref2) {
+  var active = _ref2.active;
+  var rest = _ref2.rest;
+  return React.createElement(
+    Motion,
+    {
+      defaultStyle: {
+        y: 60
+      },
+      style: {
+        y: spring(active && rest ? 60 : 60, presets.default)
+      }
+    },
+    function (interpolatingStyles) {
+      return React.createElement("header", {
+        className: "intercom-header",
+        style: {
+          height: interpolatingStyles.y
+        }
+      });
     }
-  </Motion>
-);
+  );
+};
 
 /**
  * <ChatList />
  */
-class ChatList extends Component {
-  render() {
-    const { messages } = this.props;
-    
-    // TODO, add styles
-    return (
-      <div className="intercom-list">
-        {messages.map((item, i) => (
-          <div 
-            className="intercom-list__item"
-            key={`list-item-${i}`}
-          >
-            <div className="intercom-user--avatar">
-              <img src="//placehold.it/80/1F8CEB/FFF?text=J" />
-            </div>
-            <div className="intercom-message intercom-message--trim">
-              <div className="intercom-message__header">
-                <div className="intercom-message__name">
-                  {item.messages[item.messages.length - 1].user}
-                </div>
-                <div className="intercom-date">
-                  <span className="intercom-date__month">
-                    {new Date(item.messages[item.messages.length - 1].date).getMonth()}
-                  </span>
-                  <span className="intercom-date__divider" />
-                  <span className="intercom-date__day">
-                    {new Date(item.messages[item.messages.length - 1].date).getDate()}
-                  </span>
-                </div>
-              </div>
-              <div className="intercom-message__content">
-                {item.messages[item.messages.length - 1].message}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    );
+
+var ChatList = function (_Component3) {
+  _inherits(ChatList, _Component3);
+
+  function ChatList() {
+    _classCallCheck(this, ChatList);
+
+    return _possibleConstructorReturn(this, _Component3.apply(this, arguments));
   }
-}
+
+  ChatList.prototype.render = function render() {
+    var messages = this.props.messages;
+
+    // TODO, add styles
+
+    return React.createElement(
+      "div",
+      { className: "intercom-list" },
+      messages.map(function (item, i) {
+        return React.createElement(
+          "div",
+          {
+            className: "intercom-list__item",
+            key: "list-item-" + i
+          },
+          React.createElement(
+            "div",
+            { className: "intercom-user--avatar" },
+            React.createElement("img", { src: "//placehold.it/80/1F8CEB/FFF?text=J" })
+          ),
+          React.createElement(
+            "div",
+            { className: "intercom-message intercom-message--trim" },
+            React.createElement(
+              "div",
+              { className: "intercom-message__header" },
+              React.createElement(
+                "div",
+                { className: "intercom-message__name" },
+                item.messages[item.messages.length - 1].user
+              ),
+              React.createElement(
+                "div",
+                { className: "intercom-date" },
+                React.createElement(
+                  "span",
+                  { className: "intercom-date__month" },
+                  new Date(item.messages[item.messages.length - 1].date).getMonth()
+                ),
+                React.createElement("span", { className: "intercom-date__divider" }),
+                React.createElement(
+                  "span",
+                  { className: "intercom-date__day" },
+                  new Date(item.messages[item.messages.length - 1].date).getDate()
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              { className: "intercom-message__content" },
+              item.messages[item.messages.length - 1].message
+            )
+          )
+        );
+      })
+    );
+  };
+
+  return ChatList;
+}(Component);
 
 /**
  * <Button />
  */
-class Button extends Component {
-  constructor() {
-    super();
-    
-    this.state = {
-      stable: false,
-    }
-    
-    this._handleRest = this._handleRest.bind(this);
+
+var Button = function (_Component4) {
+  _inherits(Button, _Component4);
+
+  function Button() {
+    _classCallCheck(this, Button);
+
+    var _this5 = _possibleConstructorReturn(this, _Component4.call(this));
+
+    _this5.state = {
+      stable: false
+    };
+
+    _this5._handleRest = _this5._handleRest.bind(_this5);
+    return _this5;
   }
-  
-  componentWillUnmount() {
+
+  Button.prototype.componentWillUnmount = function componentWillUnmount() {
     this.setState({
-      stable: false,
+      stable: false
     });
-  }
-  
-  _handleRest() {
+  };
+
+  Button.prototype._handleRest = function _handleRest() {
     this.setState({
-      stable: true,
+      stable: true
     });
-  }
-  
-  render() {
-    const { active, className, count, onClick } = this.props;
-    
-    const { stable } = this.state;
-    
-    let classes = cx({
+  };
+
+  Button.prototype.render = function render() {
+    var _props2 = this.props;
+    var active = _props2.active;
+    var className = _props2.className;
+    var count = _props2.count;
+    var onClick = _props2.onClick;
+    var stable = this.state.stable;
+
+    var classes = cx({
       'intercom-button': true,
-      'intercom-button--active': active,
+      'intercom-button--active': active
     }, className);
 
-    return (
-      <Motion
-        defaultStyle={{
+    return React.createElement(
+      Motion,
+      {
+        defaultStyle: {
           opacity: 0,
-          scale: 0,
-        }}
-        style={{
+          scale: 0
+        },
+        style: {
           opacity: spring(1, presets.default),
-          scale: spring(1, presets.default),
-        }}
-        onRest={this._handleRest}
-      >
-        {interpolatingStyles =>
-          <button 
-            className={classes}
-            onClick={onClick || noop}
-            style={{
+          scale: spring(1, presets.default)
+        },
+        onRest: this._handleRest
+      },
+      function (interpolatingStyles) {
+        return React.createElement(
+          "button",
+          {
+            className: classes,
+            onClick: onClick || noop,
+            style: {
               opacity: interpolatingStyles.opacity,
-              transform: `scale(${interpolatingStyles.scale})`
-            }}
-          >
-            <Badge active={active} count={count} stable={stable} />
-            <LaunchIcon active={active} />
-            <CloseIcon active={active} />
-          </button>
-        }
-      </Motion>
+              transform: "scale(" + interpolatingStyles.scale + ")"
+            }
+          },
+          React.createElement(Badge, { active: active, count: count, stable: stable }),
+          React.createElement(LaunchIcon, { active: active }),
+          React.createElement(CloseIcon, { active: active })
+        );
+      }
     );
-  }
-};
+  };
+
+  return Button;
+}(Component);
+
+;
 
 /**
  * <Badge />
  */
-const Badge = ({ active, count, stable }) => {
-  let classes = cx({
+var Badge = function Badge(_ref3) {
+  var active = _ref3.active;
+  var count = _ref3.count;
+  var stable = _ref3.stable;
+
+  var classes = cx({
     'intercom-badge': true,
-    'intercom-badge--active': active,
+    'intercom-badge--active': active
   });
-  
-  return (
-    <Motion
-      defaultStyle={{
+
+  return React.createElement(
+    Motion,
+    {
+      defaultStyle: {
         opacity: 0,
-        scale: 0,
-      }}
-      style={{
+        scale: 0
+      },
+      style: {
         opacity: spring(!active && stable ? 1 : 0, presets.default),
-        scale: spring(!active && stable ? 1 : 0, presets.default),
-      }}
-    >
-      {interpolatingStyles =>
-        <div 
-          className={classes}
-          style={{
-            opacity: interpolatingStyles.opacity,
-            transform: `
-              translate(-100%, 100%)
-              scale(${interpolatingStyles.scale})
-            `
-          }}
-        >
-          {count || 0}
-        </div>
+        scale: spring(!active && stable ? 1 : 0, presets.default)
       }
-    </Motion>
+    },
+    function (interpolatingStyles) {
+      return React.createElement(
+        "div",
+        {
+          className: classes,
+          style: {
+            opacity: interpolatingStyles.opacity,
+            transform: "\n              translate(-100%, 100%)\n              scale(" + interpolatingStyles.scale + ")\n            "
+          }
+        },
+        count || 0
+      );
+    }
   );
 };
 
 /**
  * <CloseIcon />
  */
-const CloseIcon = ({ active }) => (
-  <Motion 
-    defaultStyle={{
-      opacity: 0,
-      rotate: -45,
-      scale: 0,
-    }}
-    style={{
-      opacity: spring(active ? 1 : 0, presets.default),
-      rotate: spring(active ? 0 : -45, presets.default),
-      scale: spring(active ? 1 : 0, presets.default),
-    }}
-  >
-    {interpolatingStyles =>
-      <img 
-        alt="Close Icon"
-        className="intercom-icon intercom-icon--close"
-        src="https://js.intercomcdn.com/images/launcher-close-icon@2x.d4b89535.png"
-        style={{
+var CloseIcon = function CloseIcon(_ref4) {
+  var active = _ref4.active;
+  return React.createElement(
+    Motion,
+    {
+      defaultStyle: {
+        opacity: 0,
+        rotate: -45,
+        scale: 0
+      },
+      style: {
+        opacity: spring(active ? 1 : 0, presets.default),
+        rotate: spring(active ? 0 : -45, presets.default),
+        scale: spring(active ? 1 : 0, presets.default)
+      }
+    },
+    function (interpolatingStyles) {
+      return React.createElement("img", {
+        alt: "Close Icon",
+        className: "intercom-icon intercom-icon--close",
+        src: "https://js.intercomcdn.com/images/launcher-close-icon@2x.d4b89535.png",
+        style: {
           opacity: interpolatingStyles.opacity,
-          transform: `
-            rotate(${interpolatingStyles.rotate}deg) 
-            scale(${interpolatingStyles.scale})
-            translate(-50%, -50%)
-          `,
-        }} 
-      />
+          transform: "\n            rotate(" + interpolatingStyles.rotate + "deg) \n            scale(" + interpolatingStyles.scale + ")\n            translate(-50%, -50%)\n          "
+        }
+      });
     }
-  </Motion>
-);
+  );
+};
 
 /**
  * <LaunchIcon />
  */
-const LaunchIcon = ({ active }) => (
-  <Motion 
-    defaultStyle={{
-      opacity: 1,
-      rotate: 0,
-      scale: 1,
-    }}
-    style={{
-      opacity: spring(active ? 0 : 1, presets.default),
-      rotate: spring(active ? 45 : 0, presets.default),
-      scale: spring(active ? 0 : 1, presets.default),
-    }}
-  >
-    {interpolatingStyles =>
-      <img
-        alt="Launcher Icon"
-        className="intercom-icon intercom-icon--launcher"
-        src="https://js.intercomcdn.com/images/launcher-icon@2x.e005daae.png"
-        style={{
+var LaunchIcon = function LaunchIcon(_ref5) {
+  var active = _ref5.active;
+  return React.createElement(
+    Motion,
+    {
+      defaultStyle: {
+        opacity: 1,
+        rotate: 0,
+        scale: 1
+      },
+      style: {
+        opacity: spring(active ? 0 : 1, presets.default),
+        rotate: spring(active ? 45 : 0, presets.default),
+        scale: spring(active ? 0 : 1, presets.default)
+      }
+    },
+    function (interpolatingStyles) {
+      return React.createElement("img", {
+        alt: "Launcher Icon",
+        className: "intercom-icon intercom-icon--launcher",
+        src: "https://js.intercomcdn.com/images/launcher-icon@2x.e005daae.png",
+        style: {
           opacity: interpolatingStyles.opacity,
-          transform: `
-            rotate(${interpolatingStyles.rotate}deg) 
-            scale(${interpolatingStyles.scale})
-            translate(-50%, -50%)
-          `,
-        }}
-      />
+          transform: "\n            rotate(" + interpolatingStyles.rotate + "deg) \n            scale(" + interpolatingStyles.scale + ")\n            translate(-50%, -50%)\n          "
+        }
+      });
     }
-  </Motion>
-);
+  );
+};
 
-render(<Intercom messages={messages} />, document.getElementById('intercom'));
-
+render(React.createElement(Intercom, { messages: messages }), document.getElementById('intercom'));
 $(document).ready(function(){
     $(".dropdown-toggle").dropdown();
     $(".show-scroll").hide();
