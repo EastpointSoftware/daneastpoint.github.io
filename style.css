@@ -706,6 +706,9 @@ li.dropdown:hover > ul.dropdown-menu {
 .dropdown-section {
     margin-top: 30px;
 }
+ul.dropdown-section.epdropdown {
+    padding: 15px 0px;
+}
 .service {
     margin-right: 50px;
 }
