@@ -599,16 +599,11 @@ li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
 .dropdown-menu {
-    padding: 15px 0px 0px 0px!important;
-    border-radius: 6px!important;
-    overflow: hidden;
-    border: 0px!important;
-    box-shadow: 0 4px 10px rgba(0,0,0,.08)!important;
-    top: 54px!important;
-}
-
-.dropdown-menu {
-    min-width: 200px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 8px 8px 20px 0px rgba(46,61,73,0.15);
+    top: 54px;
 }
 .dropdown-menu.columns-2 {
     min-width: 400px;
