@@ -666,9 +666,9 @@ li.dropdown:hover > ul.dropdown-menu {
     text-transform: initial;
 }
 .epdropdown>li>a.dropdownpop {
-    font-size: 14px;
-    color: #6b7c93!important;
-    font-weight: 600!important;
+    font-size: 16px;
+    color: #40B0FF!important;
+    font-weight: 400!important;
     letter-spacing: 0.03em!important;
 }
 .dropdown-section>li>a.dropdowncontact {
