@@ -545,9 +545,16 @@ p.small {
 }
 .nav a.navcontact {
     color: #fff!important;
+    background: #40B0FF;
     padding-top: 10px;
     top: 0px!important;
     margin-right: 0px!important;
+    border: 2px solid #40B0FF;
+}
+.nav a.navcontact:focus, .nav a.navcontact:hover {
+    color: #40B0FF!important;
+    background: transparent!important;
+    border: 2px solid #40B0FF;
 }
 .contact {
     display: none;
@@ -582,12 +589,6 @@ a.navbar-brand.show-scroll {
 }
 .nav a:hover {
     color: rgba(255,255,255,0.8);
-}
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none!important;
-    background-color: transparent!important;
-    border: 2px solid #40B0FF;
-    color: #40B0FF;
 }
 .nav>li>a.active {
     border-bottom: 1px solid #fff;
