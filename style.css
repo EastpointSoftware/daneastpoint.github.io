@@ -677,7 +677,8 @@ li.dropdown:hover > ul.dropdown-menu {
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     background-color: transparent!important;
-    font-weight: 400!important;
+    border-bottom: 1px solid #40B0FF;
+    padding-bottom: 1px;
 }
 .dropdown-section>li>a.dropdowncontact {
     font-size: 16px;
