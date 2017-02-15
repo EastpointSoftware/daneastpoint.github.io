@@ -585,8 +585,9 @@ a.navbar-brand.show-scroll {
 }
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none!important;
-    background-color: #E32072!important;
-    color: #fff;
+    background-color: transparent!important;
+    border: 2px solid #40B0FF;
+    color: #40B0FF;
 }
 .nav>li>a.active {
     border-bottom: 1px solid #fff;
