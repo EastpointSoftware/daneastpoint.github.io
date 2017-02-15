@@ -666,7 +666,7 @@ li.dropdown:hover > ul.dropdown-menu {
 .epdropdown>li>a.dropdownpop {
     font-size: 16px;
     color: #40B0FF!important;
-    font-weight: 400!important;
+    font-weight: 200!important;
     letter-spacing: 0.03em!important;
     white-space: normal;
     margin-bottom: 15px;
