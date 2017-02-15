@@ -656,22 +656,24 @@ li.dropdown:hover > ul.dropdown-menu {
     text-decoration: none!important;
 }
 .epdropdown>li>a>p {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 200;
-    color: rgba(66,71,112,0.7);
+    color: rgba(66,71,112,0.9);
     margin: 0px;
     text-decoration: none;
     text-transform: initial;
     letter-spacing: normal;
     white-space: normal;
+    line-height: initial;
 }
 .epdropdown>li>a.dropdownpop {
     font-size: 16px;
     color: #40B0FF!important;
-    font-weight: 200!important;
+    font-weight: 400!important;
     letter-spacing: 0.03em!important;
     white-space: normal;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    line-height: 40px;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     background-color: transparent!important;
