@@ -657,13 +657,13 @@ li.dropdown:hover > ul.dropdown-menu {
     text-decoration: none!important;
 }
 .epdropdown>li>a>p {
-    padding: 0px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #8898aa;
+    font-size: 11px;
+    font-weight: 200;
+    color: rgba(66,71,112,0.7);
     margin: 0px;
     text-decoration: none;
     text-transform: initial;
+    letter-spacing: normal;
 }
 .epdropdown>li>a.dropdownpop {
     font-size: 16px;
