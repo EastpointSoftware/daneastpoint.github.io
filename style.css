@@ -671,6 +671,7 @@ li.dropdown:hover > ul.dropdown-menu {
     color: #40B0FF!important;
     font-weight: 400!important;
     letter-spacing: 0.03em!important;
+    white-space: normal;
 }
 .dropdown-section>li>a.dropdowncontact {
     font-size: 16px;
