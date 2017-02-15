@@ -673,7 +673,7 @@ li.dropdown:hover > ul.dropdown-menu {
     margin-bottom: 15px;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    background-color: none;
+    background-color: none!important;
     font-weight: 400!important;
 }
 .dropdown-section>li>a.dropdowncontact {
