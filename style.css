@@ -671,6 +671,10 @@ li.dropdown:hover > ul.dropdown-menu {
     white-space: normal;
     margin-bottom: 15px;
 }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: none;
+    font-weight: 400!important;
+}
 .dropdown-section>li>a.dropdowncontact {
     font-size: 16px;
     color: #3ecf8e!important;
