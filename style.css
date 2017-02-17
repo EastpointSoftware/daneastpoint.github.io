@@ -378,7 +378,7 @@ span.smallline {
     margin: 6px 0px 8px 0px;
     display: block;
 }
-span.span-gradient {
+.span-gradient {
     background-image: -webkit-linear-gradient(-45deg, #F012BE, #001dff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
