@@ -307,6 +307,11 @@ $(document).ready(function(){
         /*function(){ $('#logobutton').removeClass('logobuttonappear') }*/
     )
 });
+$('.panelheading').on('click', function(){
+    $(this).toggleClass('panelheading-open');
+    /*$('.panelheading').removeClass('panelheading-open');*/
+
+});
 $(document).ready(function(){
     $('#prevservice').hover(
         function(){ $(this).addClass('moveup') },
@@ -327,6 +332,9 @@ $(window).scroll(function() {
     } else {
         /*$(".epintercom").removeClass("epintercom-appear");*/
     }
+});
+$(document).ready(function(){
+    $("#service-boxes").fadeIn();
 });
 </script>
 </html>
