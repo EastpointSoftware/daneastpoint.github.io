@@ -379,7 +379,7 @@ span.smallline {
     display: block;
 }
 span.span-gradient {
-    background-image: -webkit-linear-gradient(-45deg, #F012BE, #001dff);
+    background-image: linear-gradient(to right, rgba(64, 176, 255,1) 0%, rgba(0,91,234,0.9) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
@@ -388,7 +388,7 @@ span.span-gradient {
     text-overflow: ellipsis;
     display: inline-block;
     position: relative;
-    top: -100px;
+    top: -105px;
 }
 /* ICONS */
 /* LISTS */
