@@ -557,7 +557,7 @@ p.small {
     border: 2px solid #40B0FF;
 }
 .nav>li>a:focus, .nav>li>a:hover {
-    background-color: transparent;
+    background-color: transparent!important;
 }
 .contact {
     display: none;
