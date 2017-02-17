@@ -386,7 +386,9 @@ span.span-gradient {
     line-height: 32px;
     font-weight: 200;
     text-overflow: ellipsis;
-    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    top: -100px;
 }
 /* ICONS */
 /* LISTS */
