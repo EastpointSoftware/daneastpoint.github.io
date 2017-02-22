@@ -132,6 +132,15 @@
     position: absolute;
     padding-bottom: 0px;
 }
+span#largeheader {
+    background: #fff;
+    width: 100vw;
+    height: 21vh;
+    min-height: 200px;
+    position: absolute;
+    transform: skewY(-6deg);
+    top: -115px;"
+}
 .simpleheadertext {
     text-align: center;
     margin-top: 4vh;
