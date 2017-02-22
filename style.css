@@ -251,7 +251,14 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px 0px 15px 0px;
 }
-.largeblockitemrightcontent p, .smallblockitemrightcontent p,
+.largeblockitemrightcontent p, .smallblockitemrightcontent p {
+    color: #424770;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    margin: 0px;
+}
 .smalltext p {
     color: #424770!important;
     font-size: 14px!important;
@@ -268,6 +275,9 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 10px 0px 10px 0px;
     text-transform: uppercase;
+}
+.servicelinks h5 { 
+    margin-top: 0px!important;
 }
 h5#blue {
     color: #40B0FF;
