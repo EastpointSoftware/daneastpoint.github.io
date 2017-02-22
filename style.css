@@ -204,7 +204,12 @@ span#largeheader {
     top: 0px;
     padding: 30px;
 }
-.largeblockitemrightcontent h4 {
+.smallblockitemrightcontent {
+    background: transparent;
+    top: 0px;
+    padding: 15px;
+}
+.largeblockitemrightcontent h4, .smallblockitemrightcontent h4 {
     color: #424770;
     font-size: 12px;
     font-weight: 200;
@@ -213,7 +218,7 @@ span#largeheader {
     text-transform: uppercase;
     margin-top: 0px;
 }
-.largeblockitemrightcontent h3 {
+.largeblockitemrightcontent h3, .smallblockitemrightcontent h3 {
     color: #424770;
     font-size: 28px;
     font-weight: bold;
@@ -222,7 +227,7 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px 0px 15px 0px;
 }
-.largeblockitemrightcontent p {
+.largeblockitemrightcontent p, .smallblockitemrightcontent p {
     color: #424770;
     font-size: 14px;
     font-weight: 200;
@@ -230,7 +235,7 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px;
 }
-.largeblockitemrightcontent h5 {
+.largeblockitemrightcontent h5, .smallblockitemrightcontent h5 {
     color: inherit;
     font-size: 12px;
     font-weight: 600;
@@ -248,7 +253,7 @@ h5#green {
 h5#pink {
     color: #E32072;
 }
-.largeblockitemrightcontent a {
+.largeblockitemrightcontent a, .smallblockitemrightcontent a {
     color: #40B0FF;
     font-size: 16px;
     border-bottom: 1px solid #40b0ff;
