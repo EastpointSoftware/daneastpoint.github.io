@@ -405,6 +405,16 @@ span.span-gradient {
     position: relative;
     top: -105px;
 }
+span.span-gradient-pos {
+    background-image: linear-gradient(to right, rgba(64, 176, 255,1) 0%, rgba(0,91,234,0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 200;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
 /* ICONS */
 /* LISTS */
 .footertop ul {
