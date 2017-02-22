@@ -125,7 +125,7 @@
     position: absolute;
     padding-bottom: 0px;
 }
-.largeheaderoverlay h2 {
+.largeheadertext h2 {
     font-size: 34px;
     line-height: 42px;
     letter-spacing: 0em;
@@ -133,13 +133,13 @@
     color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
-.largeheaderoverlay p {
+.largeheadertext p {
     color: #fff;
     font-size: 20px;
     padding: 0px 200px;
     line-height: 28px;
 }
-.largeheaderoverlay a {
+.largeheadertext a {
     color: #fff;
     font-size: 20px;
     font-weight: 200;
