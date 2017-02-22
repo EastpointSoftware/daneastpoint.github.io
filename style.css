@@ -116,6 +116,22 @@
     position: absolute;
     padding-bottom: 0px;
 }
+.simpleheadertext {
+    text-align: center;
+    margin-top: 4vh;
+}
+.simpleheadertext h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: 0em;
+    margin: 10px 0px 15px 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.simpleheadertext p {
+    color: #ffffff;
+}
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
