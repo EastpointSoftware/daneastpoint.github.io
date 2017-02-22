@@ -194,6 +194,13 @@ span#largeheader {
     background-repeat: no-repeat;
     height: inherit;
 }
+.smallblockitemleftimg {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: inherit;
+}
 .largeblockitemright {
     background: #fff;
     width: 50%;
