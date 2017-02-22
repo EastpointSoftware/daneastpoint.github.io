@@ -216,7 +216,7 @@ span#largeheader {
     line-height: 26px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 0px;
+    margin: 0px;
 }
 .largeblockitemrightcontent h3, .smallblockitemrightcontent h3 {
     color: #424770;
