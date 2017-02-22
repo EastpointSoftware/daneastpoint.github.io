@@ -232,12 +232,11 @@ span#largeheader {
 }
 .largeblockitemrightcontent h5 {
     color: inherit;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 16px;
     letter-spacing: 0.03em;
-    margin: 0px 0px 15px 0px;
-    padding: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     text-transform: uppercase;
 }
 h5#blue {
