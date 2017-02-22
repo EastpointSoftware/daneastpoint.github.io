@@ -230,7 +230,25 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px;
 }
-
+.largeblockitemrightcontent h5 {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 10px 0px;
+    text-transform: uppercase;
+}
+h5#blue {
+    color: #40B0FF;
+}
+h5#green {
+    color: #2AB27B;
+}
+h5#pink {
+    color: #E32072;
+}
 .largeblockitemrightcontent a {
     color: #40B0FF;
     font-size: 16px;
