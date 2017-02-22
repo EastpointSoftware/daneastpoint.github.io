@@ -136,7 +136,7 @@
 .largeheadertext p {
     color: #fff;
     font-size: 20px;
-    font-weight: 200px;
+    font-weight: 200;
     line-height: 28px;
     padding: 0px 200px;
 }
@@ -345,6 +345,14 @@ h5#pink {
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width: 1280px) {
+    .simpleheadercta {
+        height: 60vh;
+    }
+    #smallheaderskew {
+        margin-top: -80px;
+    }
+}
 /* NEW CSS FOR FINAL DESIGN */
 
 
@@ -528,6 +536,7 @@ hr {
     text-decoration: none;
     -webkit-transition: all .15s ease;
     transition: all .15s ease;
+    z-index: 1;
 }
 .button-logos-action {
     white-space: nowrap;
