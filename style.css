@@ -251,7 +251,7 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px 0px 15px 0px;
 }
-.largeblockitemrightcontent p, .smallblockitemrightcontent p {
+.largeblockitemrightcontent p, .smallblockitemrightcontent p, .smalltext p {
     color: #424770;
     font-size: 14px;
     font-weight: 200;
