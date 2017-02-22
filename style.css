@@ -180,6 +180,9 @@ span#largeheader {
     color: #ffffff;
 }
 @media screen and (max-width: 400px) {
+    .largeheadertext p {
+        padding: 15px;
+    }
     #header.fullwhiteskew {
     top: -65px;
     }
