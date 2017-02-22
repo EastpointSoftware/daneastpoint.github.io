@@ -139,14 +139,6 @@
     padding: 0px 200px;
     line-height: 28px;
 }
-.largeheadertext a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 28px;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 1px;
-}
 .simpleheaderoverlay {
     background:linear-gradient(45deg, rgba(64,176,255,1) 0%, rgba(64,176,255,0.94) 25%, rgba(64,176,255,0.8) 51%, rgba(64,176,255,0.94) 100%);
     height: 100%;
