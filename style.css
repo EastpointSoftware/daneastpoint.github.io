@@ -195,21 +195,29 @@ span#largeheader {
 .largeblockitemrightcontent {
     background: transparent;
     top: 0px;
+    padding: 30px;
 }
 .largeblockitemrightcontent h4 {
-    color: #424770;font-size: 12px;text-transform: uppercase;
+    color: #424770;
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 0px;
 }
 .largeblockitemrightcontent h3 {
     color: #424770;
     font-size: 28px;
     font-weight: bold;
     font-family: 'Montserrat';
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 .largeblockitemrightcontent p {
     color: #424770;
     font-size: 14px;
+    font-weight: 200;
     line-height: 20px;
+    margin: 0px;
 }
 
 .largeblockitemrightcontent a {
