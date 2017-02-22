@@ -136,8 +136,9 @@
 .largeheadertext p {
     color: #fff;
     font-size: 20px;
-    padding: 0px 200px;
+    font-weight: 200px;
     line-height: 28px;
+    padding: 0px 200px;
 }
 .simpleheaderoverlay {
     background:linear-gradient(45deg, rgba(64,176,255,1) 0%, rgba(64,176,255,0.94) 25%, rgba(64,176,255,0.8) 51%, rgba(64,176,255,0.94) 100%);
@@ -155,9 +156,13 @@ span#largeheader {
     transform: skewY(-6deg);
     top: -115px;"
 }
-.simpleheadertext, .largeheadertext {
+.simpleheadertext {
     text-align: center;
     margin-top: 4vh;
+}
+.largeheadertext {
+    text-align: center;
+    margin-top: 3vh;
 }
 .simpleheadertext h2 {
     font-size: 30px;
