@@ -324,6 +324,7 @@ h5#pink {
     }  
     .epcontentblockitem {
         width: 100%!important;
+        height: auto;
     }
     .smallblockitemrightcontent {
         height: auto!important;
