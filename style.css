@@ -284,7 +284,7 @@ h5#pink {
 }
 @media screen and (max-width: 400px) {
     .servicelinks h2 {
-        margin-top: 20px;
+        margin-top: 20px!important;
     }
     .largeheadertext p {
         padding: 15px;
