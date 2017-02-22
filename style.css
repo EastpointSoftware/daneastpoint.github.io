@@ -85,6 +85,11 @@
     letter-spacing: 0.03em;
     margin: 0px 0px 10px 0px;
 }
+.ctaquotecontainer {
+    background-size: cover;
+    background-position: left;
+    display: flex;
+}
 @media screen and (max-width: 400px) {
     #header.fullwhiteskew {
     top: -65px;
