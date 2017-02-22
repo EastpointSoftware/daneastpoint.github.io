@@ -259,7 +259,7 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px;
 }
-.largeblockitemrightcontent h5, .smallblockitemrightcontent h5 {
+.largeblockitemrightcontent h5, .smallblockitemrightcontent h5, .servicelinks h5 {
     color: inherit;
     font-size: 12px;
     font-weight: 600;
