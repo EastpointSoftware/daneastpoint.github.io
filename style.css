@@ -282,6 +282,9 @@ h5#pink {
     line-height: 22px;
 }
 @media screen and (max-width: 400px) {
+    .servicelinks h2 {
+        margin-top: 20px;
+    }
     .largeheadertext p {
         padding: 15px;
     }
