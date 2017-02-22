@@ -273,6 +273,11 @@ span#largeheader {
         padding: 0px 30px;
         box-shadow: none;
     }
+    .largeblockitemcontainer {
+        width: 100%;
+        display: block;
+        padding: 0px 30px;
+    } 
     .epcontentblockitem {
         width: 100%!important;
     }
