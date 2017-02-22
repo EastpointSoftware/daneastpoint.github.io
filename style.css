@@ -75,8 +75,9 @@
     border-bottom: 1px solid #424770;
     padding-bottom: 1px;
     color: #424770;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 26px;
     letter-spacing: 0.03em;
 }
 .servicelinks2 a {
