@@ -171,6 +171,53 @@ span#largeheader {
 .simpleheadertext p {
     color: #ffffff;
 }
+.largeblockitembg {
+    box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+    display: flex;
+}
+.largeblockitemleft {
+    background: #40B0FF;
+    width: 50%;
+    height: 600px;
+}
+.largeblockitemlefticon {
+    background-color: transparent;
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: inherit;
+}
+.largeblockitemright {
+    background: #fff;
+    width: 50%;
+    height: 600px;
+}
+.largeblockitemrightcontent {
+    background: transparent;
+    top: 0px;
+}
+.largeblockitemrightcontent h4 {
+    color: #424770;font-size: 12px;text-transform: uppercase;
+}
+.largeblockitemrightcontent h3 {
+    color: #424770;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    margin-bottom: 0px;
+}
+.largeblockitemrightcontent p {
+    color: #424770;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.largeblockitemrightcontent a {
+    color: #40B0FF;
+    font-size: 16px;
+    border-bottom: 1px solid #40b0ff;
+    line-height: 22px;
+}
 @media screen and (max-width: 400px) {
     .largeheadertext p {
         padding: 15px;
