@@ -163,7 +163,7 @@ span#largeheader {
     transform: skewY(-6deg);
     top: -115px;"
 }
-.simpleheadertext {
+.simpleheadertext, .largeheadertext {
     text-align: center;
     margin-top: 4vh;
 }
