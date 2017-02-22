@@ -201,6 +201,8 @@ span#largeheader {
     color: #424770;
     font-size: 12px;
     font-weight: 200;
+    line-height: 26px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 0px;
 }
@@ -208,15 +210,17 @@ span#largeheader {
     color: #424770;
     font-size: 28px;
     font-weight: bold;
+    line-height: 26px;
     font-family: 'Montserrat';
-    margin-top: 0px;
-    margin-bottom: 0px;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 15px 0px;
 }
 .largeblockitemrightcontent p {
     color: #424770;
     font-size: 14px;
     font-weight: 200;
     line-height: 20px;
+    letter-spacing: 0.03em;
     margin: 0px;
 }
 
