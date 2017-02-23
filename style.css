@@ -269,8 +269,11 @@ span#largeheader {
 .ctaquoteleft p {
     color: #ffffff;
 }
-.largeblockitemleftimg img, .ctaquoteleft img {
+.largeblockitemleftimg img {
     opacity: 0.85;
+}
+.ctaquoteleft img {
+    opacity: 1;
 }
 .smalltext p {
     color: #424770!important;
