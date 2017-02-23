@@ -246,7 +246,7 @@ span#largeheader {
     color: #424770;
     font-size: 28px;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 34px;
     font-family: 'Montserrat';
     letter-spacing: 0.03em;
     margin: 0px 0px 15px 0px;
@@ -267,7 +267,7 @@ span#largeheader {
     color: #8898aa;
 }
 .largeblockitemleftimg img {
-    opacity: 0.9;
+    opacity: 0.85;
 }
 .smalltext p {
     color: #424770!important;
@@ -303,6 +303,8 @@ h5#pink {
     font-size: 16px;
     border-bottom: 1px solid #40b0ff;
     line-height: 22px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 @media screen and (max-width: 400px) {
     .servicelinks h2 {
