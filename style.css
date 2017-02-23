@@ -242,7 +242,7 @@ span#largeheader {
     text-transform: uppercase;
     margin: 0px;
 }
-.largeblockitemrightcontent h3, .smallblockitemrightcontent h3 {
+.largeblockitemrightcontent h3, .smallblockitemrightcontent h3, .largeblockitemleftimg h3 {
     color: #424770;
     font-size: 28px;
     font-weight: bold;
@@ -251,13 +251,23 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px 0px 15px 0px;
 }
-.largeblockitemrightcontent p, .smallblockitemrightcontent p {
+.largeblockitemleftimg h3 {
+    color: #ffffff;
+    margin: 0px 0px 30px 0px;
+}
+.largeblockitemrightcontent p, .smallblockitemrightcontent p, .largeblockitemleftimg p {
     color: #424770;
     font-size: 14px;
     font-weight: 200;
     line-height: 20px;
     letter-spacing: 0.03em;
     margin: 0px;
+}
+.largeblockitemleftimg p {
+    color: #8898aa;
+}
+.largeblockitemleftimg img {
+    opacity: 0.9;
 }
 .smalltext p {
     color: #424770!important;
