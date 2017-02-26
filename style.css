@@ -887,7 +887,7 @@ a.navcontact {
 }
 a.navbar-brand.show-scroll {
     position: relative;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 .nav a {
     font-size: 18px;
@@ -1038,6 +1038,7 @@ ul.dropdown-section.epdropdown {
 }
 .fixed-bg .icon-bar {
     background: #40B0FF!important;
+    margin-top: 4px;
 }
 /* MOBILE NAV */
 /* NAVBAR */
