@@ -917,6 +917,14 @@ li.dropdown:hover > ul.dropdown-menu {
     -webkit-background-clip: padding-box!important;
     background-clip: padding-box!important;
 }
+@media screen and (max-width: 600px) {
+    .dropdown-menu {
+        top: 30px!important;
+    }
+    .navbar-collapse {
+        height: 100vh;
+    }
+}
 .dropdown-menu.columns-2 {
     min-width: 400px;
 }
