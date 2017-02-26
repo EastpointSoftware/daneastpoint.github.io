@@ -1394,6 +1394,10 @@ ul.dropdown-section.epdropdown {
     position: absolute;
     bottom: 0px;
 }
+.epteamcontentbg h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
 .epteamcontent h5 {
     color: #424770;
     font-size: 16px;
