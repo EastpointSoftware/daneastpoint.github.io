@@ -389,6 +389,17 @@ h5#pink {
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width: 600px) {
+    .largeheadercta {
+        height: 100vh!important;
+    }
+    .largeheadertext h2 {
+        margin: 40px 0px 0px 0px!important;
+    }
+    #smallheaderskew, #largeheader {
+        top: -35px!important;
+    }
+}
 @media screen and (max-width: 1280px) {
     .simpleheadercta {
         height: 60vh;
