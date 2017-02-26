@@ -921,9 +921,9 @@ li.dropdown:hover > ul.dropdown-menu {
     .dropdown-menu {
         top: 30px!important;
     }
-    .navbar-collapse {
+}
+.navbar-collapse {
         height: 100vh;
-    }
 }
 .dropdown-menu.columns-2 {
     min-width: 400px;
