@@ -389,23 +389,32 @@ h5#pink {
         margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 600px) {
-    .largeheadercta {
-        height: 100vh!important;
-    }
-    .largeheadertext h2 {
-        margin: 40px 0px 0px 0px!important;
-    }
-    #smallheaderskew, #largeheader {
-        top: -35px!important;
-    }
-}
 @media screen and (max-width: 1280px) {
     .simpleheadercta {
         height: 60vh;
     }
     #smallheaderskew, #largeheader {
         top: -80px!important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .largeheadertext p {
+        padding: 0px 50px!important;
+    }
+    .largeheadercta {
+        height: 58vh;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .largeheadercta {
+        height: 100vh;
+    }
+    .largeheadertext h2 {
+        margin: 40px 0px 0px 0px!important;
+    }
+    #smallheaderskew, #largeheader {
+        top: -35px!important;
     }
 }
 /* NEW CSS FOR FINAL DESIGN */
@@ -878,6 +887,7 @@ a.navcontact {
 }
 a.navbar-brand.show-scroll {
     position: relative;
+    padding-top: 5px;
 }
 .nav a {
     font-size: 18px;
@@ -1025,6 +1035,9 @@ ul.dropdown-section.epdropdown {
     height: 4px!important;
     border-radius: 6px!important;
     background: #fff!important;
+}
+.fixed-bg .icon-bar {
+    background: #40B0FF;
 }
 /* MOBILE NAV */
 /* NAVBAR */
