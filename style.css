@@ -1371,6 +1371,10 @@ ul.dropdown-section.epdropdown {
     .epteamprofile {
         width: 50%!important;
         height: 300px!important;
+        float: left;
+    }
+    .epteamgrid {
+        display: block!important;
     }
 }
 .zoom {
