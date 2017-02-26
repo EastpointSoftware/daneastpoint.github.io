@@ -1377,7 +1377,8 @@ ul.dropdown-section.epdropdown {
     background-size: 150%!important;
 }
 .epteamcontent {
-    width: initial;
+    width: 100%;
+    background: #273444;
     height: auto;
     padding: 15px;
     position: absolute;
