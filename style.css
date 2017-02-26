@@ -925,9 +925,9 @@ li.dropdown:hover > ul.dropdown-menu {
         box-shadow: none!important;
     }
 }
-.navbar-fixed-top .navbar-collapse {
-        max-height: 100vh;
-        max-height: 100%;
+.mobile {
+    max-height: 100vh;
+    max-height: 100%;
 }
 .dropdown-menu.columns-2 {
     min-width: 400px;
