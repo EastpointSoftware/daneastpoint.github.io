@@ -920,10 +920,14 @@ li.dropdown:hover > ul.dropdown-menu {
 @media screen and (max-width: 600px) {
     .dropdown-menu {
         top: 30px!important;
+        padding-top: 0px!important;
+        position: initial!important;
+        box-shadow: none!important;
     }
 }
 .navbar-collapse {
-        height: 100vh;
+        max-height: 100vh;
+        max-height: 100%;
 }
 .dropdown-menu.columns-2 {
     min-width: 400px;
