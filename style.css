@@ -1385,6 +1385,10 @@ ul.dropdown-section.epdropdown {
 .epteamcontentbg {
     width: 100%;
     background: #273444!important;
+    height: auto;
+    padding: 15px;
+    position: absolute;
+    bottom: 0px;
 }
 .epteamcontent h5 {
     color: #424770;
