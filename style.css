@@ -176,6 +176,16 @@ span#largeheader {
     text-align: center;
     margin-top: 3vh;
 }
+.largeheadersidebartext {
+    text-align: left;
+}
+.largeheadersidebartext p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 28px;
+    padding: 0px!important;
+}
 .simpleheadertext h2 {
     font-size: 30px;
     font-weight: bold;
