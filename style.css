@@ -200,6 +200,18 @@ span#largeheader {
     line-height: 28px;
     padding: 0px!important;
 }
+.headersidebaritemleft {
+    height: 100%;
+    background-size: 48%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.headersidebaritemright {
+    position: relative;
+    width: 60%;
+    padding: 10px;
+    background: #FFF;
+}
 .simpleheadertext h2 {
     font-size: 30px;
     font-weight: bold;
