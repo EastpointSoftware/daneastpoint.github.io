@@ -187,6 +187,12 @@ span#largeheader {
     letter-spacing: 0.03em;
     margin: 0px 0px 10px 0px;
 }
+.largeheadersidebar a {
+    color: #40B0FF;
+    text-decoration: none;
+    border-bottom: 1px solid #40B0FF;
+    padding-bottom: 1px;
+}
 .largeheadersidebartext p {
     color: #fff;
     font-size: 20px;
