@@ -490,7 +490,7 @@ h5#pink {
 }
 @media screen and (max-width: 600px) {
     .largeheadertext p {
-        padding: 15px!important;
+        padding: 15px 0px!important;
     }
     .largeheadercta {
         height: 100vh;
