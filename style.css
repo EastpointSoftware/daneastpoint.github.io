@@ -313,19 +313,21 @@ h5#pink {
     display: inline-block;
 }
 .epteamcontentbg h3 {
+    color: #fff;
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 28px;
-    line-height: 26px;
-    color: #fff;
-    margin-bottom: 0px;
+    line-height: 32px;
+    margin: 0px;
 }
 .epteamcontentbg p {
     color: #fff;
     font-size: 14px;
+    font-weight: 200;
 }
 .epteamcontentbg i.fa.fa-linkedin {
     color: #40B0FF;
+    font-size: 16px;
 }
 @media screen and (max-width: 400px) {
     .epteamcontentbg h3 {
