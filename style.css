@@ -518,6 +518,9 @@ h5#yellow {
 
 }
 @media screen and (max-width: 600px) {
+    a.navbar-brand.show-scroll {
+    padding-top: 7px;
+    }
     .teamphotoquoteleft {
         height: 300px;
     }
@@ -1013,7 +1016,6 @@ a.navcontact {
 }
 a.navbar-brand.show-scroll {
     position: relative;
-    padding-top: 7px;
 }
 .nav a {
     font-size: 18px;
