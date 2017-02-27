@@ -103,14 +103,14 @@
     display: flex;
 }
 .blocktextgradientalt h2 {
-    font-size: 130px;
-    font-weight: bold;
-    line-height: 120px;
-    letter-spacing: 0em;
-    margin: 10px 0px 15px 0px;
-    color: #f5f4f9;
-    font-family: 'Caveat Brush', cursive;
-    text-transform: uppercase;
+    font-size: 130px!important;
+    font-weight: bold!important;
+    line-height: 120px!important;
+    letter-spacing: 0em!important;
+    margin: 10px 0px 15px 0px!important;
+    color: #f5f4f9!important;
+    font-family: 'Caveat Brush', cursive!important;
+    text-transform: uppercase!important;
 }
 .simpleheadercta {
     width: 100%;
