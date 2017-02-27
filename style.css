@@ -1395,6 +1395,7 @@ ul.dropdown-section.epdropdown {
         float: left;
     }
     .epteamgrid {
+        width: 100%;
         display: block!important;
     }
 }
