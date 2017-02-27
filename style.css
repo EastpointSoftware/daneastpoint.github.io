@@ -504,6 +504,12 @@ h5#pink {
 
 }
 @media screen and (max-width: 600px) {
+    .teamphotoquoteleft {
+        height: 300px;
+    }
+    .teamphotoquoteright {
+        padding: 30px;
+    }
     .largeheadertext p {
         padding: 15px 0px!important;
     }
