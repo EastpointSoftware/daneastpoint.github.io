@@ -179,6 +179,9 @@ span#largeheader {
 .largeheadersidebartext {
     text-align: left;
 }
+.largeheadersidebar {
+    z-index: 1;
+}
 .largeheadersidebar h3 {
     color: #424770;
     font-size: 20px;
