@@ -32,6 +32,7 @@
 .teamquote a.button.button-vimportant-action {
         background: #338ccc;
         color: #fff;
+        margin: 0px;
 }
 .cotnentblockcontainer {
     width: 100%;
@@ -403,9 +404,6 @@ h5#pink {
     background-color: #40B0FF;
     height: inherit;
     padding: 50px 80px;
-}
-.teamphotoquoteright button {
-    margin: 0px!important;
 }
 @media screen and (max-width: 400px) {
     .epteamcontentbg h3 {
