@@ -179,6 +179,14 @@ span#largeheader {
 .largeheadersidebartext {
     text-align: left;
 }
+.largeheadersidebar h3 {
+    color: #424770;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 10px 0px;
+}
 .largeheadersidebartext p {
     color: #fff;
     font-size: 20px;
@@ -251,6 +259,9 @@ span#largeheader {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0px;
+}
+.largeheadersidebar h4 {
+    line-height: 12px!important;
 }
 .largeblockitemrightcontent h3, .smallblockitemrightcontent h3, .largeblockitemleftimg h3, .ctaquoteleft h3 {
     color: #424770;
