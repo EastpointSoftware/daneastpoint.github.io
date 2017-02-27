@@ -399,7 +399,11 @@ h5#pink {
         margin-top: 20px!important;
     }
     .largeheadertext p {
-        padding: 15px;
+        padding: 15px!important;
+
+    }
+    .largeheadertext {
+        text-align: left;
     }
     #header.fullwhiteskew {
     top: -65px;
