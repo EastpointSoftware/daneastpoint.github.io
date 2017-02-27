@@ -312,7 +312,19 @@ h5#pink {
     margin-bottom: 20px;
     display: inline-block;
 }
+.epteamcontentbg h3 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 0px;
+}
 @media screen and (max-width: 400px) {
+    .epteamcontentbg h3 {
+    font-size: 20px;
+    line-height: 24px;
+    }  
     .servicelinks h2 {
         margin-top: 20px!important;
     }
@@ -1393,10 +1405,6 @@ ul.dropdown-section.epdropdown {
     padding: 15px;
     position: absolute;
     bottom: 0px;
-}
-.epteamcontentbg h3 {
-    font-size: 20px;
-    line-height: 24px;
 }
 .epteamcontent h5 {
     color: #424770;
