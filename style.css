@@ -372,6 +372,9 @@ h5#green {
 h5#pink {
     color: #E32072;
 }
+h5#yellow {
+    color: #EDB431;
+}
 .largeblockitemrightcontent a, .smallblockitemrightcontent a {
     color: #40B0FF;
     font-size: 16px;
