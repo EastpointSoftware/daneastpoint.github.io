@@ -182,7 +182,7 @@ span#largeheader {
 .largeheadersidebar h3 {
     color: #424770;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400!important;
     line-height: 28px;
     letter-spacing: 0.03em;
     margin: 0px 0px 10px 0px;
@@ -276,7 +276,7 @@ span#largeheader {
     color: #ffffff;
     margin: 0px 0px 30px 0px;
 }
-.largeblockitemrightcontent p, .smallblockitemrightcontent p, .largeblockitemleftimg p, .ctaquoteleft p {
+.largeblockitemrightcontent p, .smallblockitemrightcontent p, .largeblockitemleftimg p, .ctaquoteleft p, .largeheadersidebar p {
     color: #424770;
     font-size: 14px;
     font-weight: 200;
