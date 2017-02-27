@@ -390,6 +390,23 @@ h5#pink {
     color: #40B0FF;
     font-size: 16px;
 }
+.teamphotoquoteleft {
+    background-colo: #ffffff;
+    background-size: 65%;
+    background-position: center
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 462px;
+    max-height: 462px;;
+}
+.teamphotoquoteright {
+    background-color: #40B0FF;
+    height: inherit;
+    padding: 50px 80px;
+}
+.teamphotoquoteright button {
+    margin: 0px!important;
+}
 @media screen and (max-width: 400px) {
     .epteamcontentbg h3 {
     font-size: 20px;
