@@ -340,6 +340,14 @@ span#largeheader {
 .ctaquoteleft p {
     color: #ffffff;
 }
+.ctaquoteleft input {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid #338ccc;
+    border-radius: 4px;
+    color: #fff;
+}
 .largeblockitemleftimg img {
     opacity: 0.85;
 }
